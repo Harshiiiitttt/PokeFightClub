@@ -1,0 +1,238 @@
+[
+  {
+    "file": "fx/waterwisp.png",
+    "source": "https://play.pokemonshowdown.com/fx/waterwisp.png"
+  },
+  {
+    "file": "fx/electroball.png",
+    "source": "https://play.pokemonshowdown.com/fx/electroball.png"
+  },
+  {
+    "file": "fx/iceball.png",
+    "source": "https://play.pokemonshowdown.com/fx/iceball.png"
+  },
+  {
+    "file": "fx/shadowball.png",
+    "source": "https://play.pokemonshowdown.com/fx/shadowball.png"
+  },
+  {
+    "file": "fx/fireball.png",
+    "source": "https://play.pokemonshowdown.com/fx/fireball.png"
+  },
+  {
+    "file": "fx/foot.png",
+    "source": "https://play.pokemonshowdown.com/fx/foot.png"
+  },
+  {
+    "file": "fx/topbite.png",
+    "source": "https://play.pokemonshowdown.com/fx/topbite.png"
+  },
+  {
+    "file": "fx/fist.png",
+    "source": "https://play.pokemonshowdown.com/fx/fist.png"
+  },
+  {
+    "file": "fx/rock1.png",
+    "source": "https://play.pokemonshowdown.com/fx/rock1.png"
+  },
+  {
+    "file": "fx/energyball.png",
+    "source": "https://play.pokemonshowdown.com/fx/energyball.png"
+  },
+  {
+    "file": "fx/bottombite.png",
+    "source": "https://play.pokemonshowdown.com/fx/bottombite.png"
+  },
+  {
+    "file": "fx/rock2.png",
+    "source": "https://play.pokemonshowdown.com/fx/rock2.png"
+  },
+  {
+    "file": "fx/poisonwisp.png",
+    "source": "https://play.pokemonshowdown.com/fx/poisonwisp.png"
+  },
+  {
+    "file": "audio/battle.mp3",
+    "source": "https://play.pokemonshowdown.com/audio/oras-trainer.mp3"
+  },
+  {
+    "file": "audio/94.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/94.ogg"
+  },
+  {
+    "file": "audio/6.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/6.ogg"
+  },
+  {
+    "file": "audio/25.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg"
+  },
+  {
+    "file": "audio/9.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/9.ogg"
+  },
+  {
+    "file": "audio/3.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/3.ogg"
+  },
+  {
+    "file": "audio/149.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/149.ogg"
+  },
+  {
+    "file": "audio/150.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/150.ogg"
+  },
+  {
+    "file": "audio/249.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/249.ogg"
+  },
+  {
+    "file": "audio/257.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/257.ogg"
+  },
+  {
+    "file": "audio/250.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/250.ogg"
+  },
+  {
+    "file": "audio/151.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/151.ogg"
+  },
+  {
+    "file": "audio/254.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/254.ogg"
+  },
+  {
+    "file": "audio/260.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/260.ogg"
+  },
+  {
+    "file": "audio/282.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/282.ogg"
+  },
+  {
+    "file": "audio/382.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/382.ogg"
+  },
+  {
+    "file": "audio/376.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/376.ogg"
+  },
+  {
+    "file": "audio/373.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/373.ogg"
+  },
+  {
+    "file": "audio/383.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/383.ogg"
+  },
+  {
+    "file": "audio/445.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/445.ogg"
+  },
+  {
+    "file": "audio/384.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/384.ogg"
+  },
+  {
+    "file": "audio/483.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/483.ogg"
+  },
+  {
+    "file": "audio/448.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/448.ogg"
+  },
+  {
+    "file": "audio/484.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/484.ogg"
+  },
+  {
+    "file": "audio/487.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/487.ogg"
+  },
+  {
+    "file": "audio/643.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/643.ogg"
+  },
+  {
+    "file": "audio/644.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/644.ogg"
+  },
+  {
+    "file": "audio/646.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/646.ogg"
+  },
+  {
+    "file": "audio/658.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/658.ogg"
+  },
+  {
+    "file": "audio/717.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/717.ogg"
+  },
+  {
+    "file": "audio/791.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/791.ogg"
+  },
+  {
+    "file": "audio/888.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/888.ogg"
+  },
+  {
+    "file": "audio/800.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/800.ogg"
+  },
+  {
+    "file": "audio/889.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/889.ogg"
+  },
+  {
+    "file": "audio/890.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/890.ogg"
+  },
+  {
+    "file": "audio/716.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/716.ogg"
+  },
+  {
+    "file": "audio/792.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/792.ogg"
+  },
+  {
+    "file": "building-tiles.png",
+    "source": "https://raw.githubusercontent.com/pret/pokeemerald/master/data/tilesets/primary/building/tiles.png"
+  },
+  {
+    "file": "general-tiles.png",
+    "source": "https://raw.githubusercontent.com/pret/pokeemerald/master/data/tilesets/primary/general/tiles.png"
+  },
+  {
+    "file": "forest-bg.png",
+    "source": "https://play.pokemonshowdown.com/fx/bg-gen3-forest.png"
+  },
+  {
+    "file": "volcano-bg.png",
+    "source": "https://play.pokemonshowdown.com/fx/bg-volcanocave.png"
+  },
+  {
+    "file": "fx/leftslash.png",
+    "source": "https://play.pokemonshowdown.com/fx/leftslash.png"
+  },
+  {
+    "file": "fx/rightslash.png",
+    "source": "https://play.pokemonshowdown.com/fx/rightslash.png"
+  },
+  {
+    "file": "fx/impact.png",
+    "source": "https://play.pokemonshowdown.com/fx/impact.png"
+  },
+  {
+    "file": "fx/lightning.png",
+    "source": "https://play.pokemonshowdown.com/fx/lightning.png"
+  },
+  {
+    "file": "fx/sword.png",
+    "source": "https://play.pokemonshowdown.com/fx/sword.png"
+  }
+]

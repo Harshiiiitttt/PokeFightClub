@@ -1,1 +1,1 @@
-{"name":"pokemon-battle-theater","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/app.js && node --check dist/engine.js"}}
+{"name":"pokemon-battle-theater","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/app.js && node --check dist/engine.js && node --check dist/battle-view.js && node --check dist/battle-audio.js","test":"node test-engine.mjs && node test-interface.mjs"},"devDependencies":{"linkedom":"0.18.15"}}
