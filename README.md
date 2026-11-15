@@ -1,5 +1,4 @@
-# Pokémon Battle Theater
-
+# PokeFightClub
 Buildless browser-based 3v3 Pokémon auto-battles, inspired by the user's supplied 2D sprite battle references. Run `npm start` and open http://127.0.0.1:4173. Run `npm run check` and `node test-engine.mjs` for checks.
 
 36 featured Pokémon have bundled GIF/PNG sprites and stats. The searchable picker includes the first 1,025 species; additional Pokémon fetch their data from PokéAPI and sprites from PokeAPI/sprites. Downloaded Pokémon data is cached locally. Some later species only have static fallback sprites. Assets are attributed in the in-app credits. Online services and Google Fonts require connectivity; default teams and environments work without them.
