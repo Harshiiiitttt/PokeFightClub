@@ -1,0 +1,25 @@
+import fs from 'node:fs';
+import {parseHTML} from 'linkedom';
+import {arenaCatalog} from './dist/arena-catalog.js';
+let intro=fs.readFileSync('dist/guardian-entrance.js','utf8');
+intro=intro.replace('presentGuardian(view,g,true);g.charge=true;', "presentGuardian(view,g,true);g.silhouette=true;g.el?.classList.add('guardian-silhouette');g.charge=true;");
+intro=intro.replace("   shake(leader?16:10", "   fx('landing-dust',pos,pos,color,850);g.action='Hurt';\n   shake(leader?16:10");
+intro=intro.replace('   await w(leader?600:450);', "   await w(100);if(!valid())return false;\n   g.silhouette=false;g.el?.classList.remove('guardian-silhouette');\n   view.move(g,{x:pos.x,y:pos.y+8},90);await w(90);if(!valid())return false;\n   view.move(g,pos,140);await w(140);if(!valid())return false;g.pos={...pos};g.motion=null;g.action=null;\n   await w(leader?440:290);");
+intro=intro.replace('  view.cameraZoom=cinematic?1.16:1;', "  boss.action='Hurt';boss.charge=false;audio.quiet?.(650);\n  view.addFx('boss-reaction',boss.pos,boss.pos,boss.aura||'#ff5a86',700,{portrait:boss.el?.querySelector('canvas'),name:boss.name});\n  await w(650);if(!valid())return false;boss.action=null;\n  view.cameraZoom=cinematic?1.16:1;");
+intro=intro.replace('for(const g of guardians)presentGuardian(view,g,false);view.summoning=false;', "for(const g of guardians){g.silhouette=false;g.el?.classList.remove('guardian-silhouette');presentGuardian(view,g,false);}view.summoning=false;");fs.writeFileSync('dist/guardian-entrance.js',intro);
+let view=fs.readFileSync('dist/battle-view.js','utf8');view="import {beamFront,updateBeamStruggle} from './beam-struggle.js?v=14';\n"+view;
+view=view.replace('this.summoning=false;this.cinematicStandoff=false;', 'this.summoning=false;this.clashState=null;this.cinematicStandoff=false;');
+view=view.replace(' updateSprites(){const boss=', ' updateSprites(){updateBeamStruggle(this);const boss=');
+const old='const winY=e.guardianWin?295:700,baseY=495+Math.sin(t*Math.PI*6)*46+Math.cos(t*Math.PI*3)*18,cy=t<.78?baseY:baseY+(winY-baseY)*Math.pow((t-.78)/.22,1.6),cx=270+Math.sin(t*Math.PI*14)*6;';
+view=view.replace(old,"if(e.boss){e.from.x=e.boss.pos.x;e.from.y=e.boss.pos.y+23;}const cy=beamFront(t,e.guardianWin),cx=270+Math.sin(t*Math.PI*14)*6;");
+view=view.replace("for(const g of(e.guardians||[])){c.shadowColor=g.color;", "for(const g of(e.guardians||[])){const gp=g.fighter?.pos||g.pos;c.shadowColor=g.color;");view=view.replaceAll('c.moveTo(g.pos.x,g.pos.y-18);','c.moveTo(gp.x,gp.y-18);');fs.writeFileSync('dist/battle-view.js',view);
+let choreo=fs.readFileSync('dist/choreography.js','utf8');choreo="import {beginBeamStruggle,endBeamStruggle} from './beam-struggle.js?v=14';\n"+choreo;
+choreo=choreo.replace("  audio.sfx(bossMeta.type,'beam');", "  beginBeamStruggle(view,boss,guardians,guardianWin);\n  view.addFx('clash-ground',mid,mid,bossMeta.color,1750,{boss,guardians,guardianWin,behindFighters:true});\n  audio.sfx(bossMeta.type,'beam');");
+choreo=choreo.replace("guardians:guardians.map(g=>({pos:{...g.pos},color:","boss,guardians:guardians.map(g=>({fighter:g,pos:{...g.pos},color:");
+choreo=choreo.replace("  const detPos=guardianWin?", "  endBeamStruggle(view);\n  const detPos=guardianWin?");choreo=choreo.replace('}finally{view.cinematicStandoff=false;}', '}finally{endBeamStruggle(view);view.cinematicStandoff=false;}');fs.writeFileSync('dist/choreography.js',choreo);
+const manifestPath='dist/assets/pmd/mega-manifest.json',manifest=JSON.parse(fs.readFileSync(manifestPath));manifest['eternamax-890'].frontOnly=true;fs.writeFileSync(manifestPath,JSON.stringify(manifest));
+let forms=fs.readFileSync('dist/form-art.js','utf8');forms=forms.replace("back=p.presentationFacing?p.presentationFacing==='back':p.team===1", "back=art.frontOnly?false:p.presentationFacing?p.presentationFacing==='back':p.team===1");fs.writeFileSync('dist/form-art.js',forms);
+let pmd=fs.readFileSync('dist/pmd-animation.js','utf8');pmd=pmd.replace("const isBack=p.presentationFacing?", "const isBack=view.pmd?.[p.formKey]?.frontOnly?false:p.presentationFacing?");pmd=pmd.replace("let row=p.direction??(p.team===0?0:4);", "let row=view.pmd?.[form]?.frontOnly?0:p.direction??(p.team===0?0:4);");fs.writeFileSync('dist/pmd-animation.js',pmd);
+let html=fs.readFileSync('dist/index.html','utf8');const {document}=parseHTML(html),options=document.querySelector('.arena-options');options.replaceChildren();for(const [id,a] of Object.entries(arenaCatalog)){const b=document.createElement('button');b.className='arena-option'+(id==='stadium'?' selected':'');b.dataset.arena=id;b.title=a.weather;b.innerHTML=`<span class="arena-art" style="background-image:url('assets/arenas/${a.image}.png')"></span><strong>${a.label}</strong>`;options.append(b)}fs.writeFileSync('dist/index.html',document.toString());
+fs.appendFileSync('dist/workspace.css','\n.guardian-unit.guardian-silhouette .pmd-sprite{filter:brightness(0) drop-shadow(0 0 3px var(--aura))!important}\n');
+for(const file of fs.readdirSync('dist').filter(f=>/\.(js|html|css)$/.test(f))){const path='dist/'+file;fs.writeFileSync(path,fs.readFileSync(path,'utf8').replaceAll('?v=13','?v=14'))}

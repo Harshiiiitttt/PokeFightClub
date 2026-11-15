@@ -1,0 +1,3 @@
+import fs from 'node:fs';
+for(const file of fs.readdirSync('dist').filter(f=>/\.(js|html|css)$/.test(f))){const path='dist/'+file;fs.writeFileSync(path,fs.readFileSync(path,'utf8').replaceAll('?v=14','?v=15'))}
+fs.appendFileSync('README.md','\nVersion 15 pins the health panels close to the top and bottom edges only in the 50v1 boss raid. Mounting another mode clears the raid-specific class and leaves its previous panel positions unchanged. The small stage footer moves above the lower raid panel. Recording composition uses corresponding edge anchors (top 30 and bottom 884 in the 540x960 frame); other modes keep 82/790. Integration checks cover entering and leaving the raid mode. Outro redesign remains a proposal, pending the user’s chosen direction.\n');

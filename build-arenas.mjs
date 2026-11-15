@@ -1,0 +1,5 @@
+import fs from 'node:fs';
+import {createCanvas,Image} from '@napi-rs/canvas';
+for(const name of ['rocky','forest','volcano']){const file=`dist/assets/arenas/${name}-tiles.png`;if(!fs.existsSync(file))continue;const atlas=new Image();atlas.src=fs.readFileSync(file);const canvas=createCanvas(540,960),c=canvas.getContext('2d');c.imageSmoothingEnabled=false;c.fillStyle='#44404a';c.fillRect(0,0,540,960);let seed=41;const random=()=>{seed=seed*16807%2147483647;return seed/2147483647};
+for(let row=0;row<27;row++)for(let col=0;col<15;col++){const edge=row===0||row===26||col===0||col===14;let sx=251,sy=26;if(edge){sx=(col===0?0:col===14?2:1)*25+1;sy=(row===0?0:row===26?2:1)*25+1}c.drawImage(atlas,sx,sy,24,24,col*36,row*36,36,36);if(!edge&&random()<.12)c.drawImage(atlas,326,26,24,24,col*36,row*36,36,36)}
+const v=c.createRadialGradient(270,480,190,270,480,620);v.addColorStop(0,'#10111d00');v.addColorStop(1,'#10111d44');c.fillStyle=v;c.fillRect(0,0,540,960);fs.writeFileSync(`dist/assets/arenas/${name}.png`,canvas.toBuffer('image/png'));console.log('Assembled sourced PMD arena:',name)}

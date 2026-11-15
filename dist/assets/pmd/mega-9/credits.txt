@@ -1,0 +1,4 @@
+GBA Mega overworld pixel art and native walking frames: rh-hideout/pokeemerald-expansion.
+https://github.com/rh-hideout/pokeemerald-expansion/tree/master/graphics/pokemon/blastoise/mega
+Original contributor attribution: https://github.com/rh-hideout/pokeemerald-expansion/blob/master/CREDITS.md
+Four-direction walking poses are sequenced for idle and battle actions; attack motion/effects are provided by this app. No claim of native GBA attack animation.

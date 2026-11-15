@@ -1,0 +1,3 @@
+Transformed-form GBA art: https://github.com/rh-hideout/pokeemerald-expansion/tree/master/graphics/pokemon/sceptile/mega
+Contributor attribution: https://github.com/rh-hideout/pokeemerald-expansion/blob/master/CREDITS.md
+Walking poses are native where available; battle choreography and Eternamax pose sequences are supplied by this app.

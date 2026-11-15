@@ -1,0 +1,1 @@
+Original sound effects created for this project: charge, whoosh, strike, heavy impact, flame, water, electric, ice, energy, ground and steel. Synthesized offline into PCM WAV files.

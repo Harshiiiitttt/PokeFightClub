@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {parseHTML} from 'linkedom';
+import {GlobalFonts} from '@napi-rs/canvas';
+import {initWorkspace,arenaDimensions} from './dist/workspace-ui.js';
+const {document,window}=parseHTML(fs.readFileSync('dist/index.html','utf8'));let resized;
+globalThis.ResizeObserver=class{constructor(cb){resized=cb}observe(){}};
+initWorkspace(document);
+const click=id=>document.getElementById(id).dispatchEvent(new window.Event('click',{bubbles:true}));
+assert(!document.querySelector('#panel-teams').hidden);const music=document.querySelector('#music-volume');music.value='12';click('tab-effects');assert(!document.querySelector('#panel-effects').hidden&&document.querySelector('#panel-teams').hidden);click('tab-arena');assert(!document.querySelector('#panel-arena').hidden);click('tab-effects');assert.equal(music.value,'12','Changing setup tabs must retain control state');
+const key=new window.Event('keydown',{bubbles:true});key.key='ArrowRight';document.querySelector('#tab-teams').dispatchEvent(key);assert.equal(document.querySelector('#tab-arena').getAttribute('aria-selected'),'true');
+click('open-settings');assert(document.body.classList.contains('settings-open'));assert(!document.querySelector('#panel-backdrop').hidden);click('open-commentary');assert(!document.body.classList.contains('settings-open'));assert(document.body.classList.contains('commentary-open'));click('panel-backdrop');assert(!document.body.classList.contains('commentary-open'));assert(document.querySelector('#panel-backdrop').hidden);
+click('open-settings');const esc=new window.Event('keydown',{bubbles:true});esc.key='Escape';document.dispatchEvent(esc);assert(!document.body.classList.contains('settings-open'));
+assert(document.querySelector('#start').closest('.setup-actions'));assert(!document.querySelector('#start').closest('.setup-pane'));for(const id of ['team-a','team-b','cinematic','mega','music','speeds','sprite-style','effects-volume','test-sfx'])assert(document.getElementById(id),'Lost original battle control '+id);
+for(const [w,h] of [[960,600],[350,700],[280,300],[800,180],[0,0],[1440,900],[320,480]]){const d=arenaDimensions(w,h);assert(d.width<=w+.001&&d.height<=h+.001,'Portrait field must fit its available panel');if(d.height>0)assert(Math.abs(d.width/d.height-9/16)<.00001)}resized([{contentRect:{width:500,height:800}}]);assert.equal(document.querySelector('#stage').style.width,'450px');assert.equal(document.querySelector('#stage').style.height,'800px');
+assert(GlobalFonts.registerFromPath('dist/assets/fonts/Inter.ttf','Workspace Inter'));assert(GlobalFonts.registerFromPath('dist/assets/fonts/SpaceGrotesk.ttf','Workspace Headings'));
+console.log('PASS: setup tab and keyboard navigation, retained controls/settings, panel switching + Escape/backdrop close, pinned start action, portrait fitting across viewport sizes, and valid bundled UI fonts. Browser CSS layout is not verified by this test.');

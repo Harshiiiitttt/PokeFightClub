@@ -1,1 +1,15 @@
-{"name":"pokemon-battle-theater","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/app.js && node --check dist/engine.js && node --check dist/battle-view.js && node --check dist/battle-audio.js","test":"node test-engine.mjs && node test-interface.mjs"},"devDependencies":{"linkedom":"0.18.15"}}
+{
+  "name": "pokemon-battle-theater",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/engine.js && node --check dist/battle-view.js && node --check dist/battle-audio.js && node --check dist/choreography.js && node --check dist/classic-sprites.js && node --check dist/pmd-animation.js && node --check server.mjs && node --check dist/combat-feel.js && node --check dist/sprite-layout.js && node --check dist/pmd-loader.js && node --check dist/sprite-form.js && node --check dist/attack-details.js && node --check dist/mega.js && node --check dist/evolution-fx.js && node --check dist/workspace-ui.js && node --check dist/formation.js && node --check dist/arena-catalog.js && node --check dist/arena-ambience.js && node --check dist/species-db.js && node --check dist/battle-modes.js && node --check dist/recording-studio.js && node --check dist/guardian-entrance.js && node --check dist/guardian-fx.js && node --check dist/form-art.js && node --check dist/move-labels.js && node --check dist/guardian-presentation.js && node --check dist/beam-struggle.js && node --check dist/raid-outro.js && node --check dist/outro-fx.js && node --check dist/raid-pacing.js && node --check dist/faint-notices.js && node --check dist/match-presentation.js && node --check dist/finishing-hit.js && node --check dist/guardian-spacing.js && node --check dist/attack-polish.js && node --check dist/environment-life.js",
+    "test": "node test-engine.mjs && node test-interface.mjs && node test-audio.mjs && node test-classic.mjs && node test-pmd.mjs && node test-combat-feel.mjs && node test-sprite-layout.mjs && node test-interface.mjs --mega && node test-mega-animations.mjs && node test-cinematic-features.mjs && node test-workspace-ui.mjs && node test-formation-arenas.mjs && node test-gba-megas.mjs && node test-modes-and-raid.mjs && node test-guardian-entrance.mjs && node test-raid-entrance-integration.mjs && node test-transformed-sprites.mjs && node test-move-labels.mjs && node test-guardian-visibility.mjs && node test-cinema-v14.mjs && node test-raid-outro.mjs && node test-raid-timing-integration.mjs && node test-outro-native.mjs && node test-match-presentation.mjs && node test-finishing-hit.mjs && node test-guardian-spacing.mjs && node test-attack-polish.mjs && node test-environment-life.mjs",
+    "local": "powershell -File start-local.ps1"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.15",
+    "@napi-rs/canvas": "1.1.1"
+  }
+}

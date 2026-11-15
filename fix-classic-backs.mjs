@@ -1,0 +1,3 @@
+import fs from 'node:fs/promises';
+const manifest=JSON.parse(await fs.readFile('dist/assets/classic/manifest.json')),sources=JSON.parse(await fs.readFile('dist/assets/sources.json'));
+for(const id of Object.keys(manifest).map(Number).filter(id=>id>386&&id<=649)){const source=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/${id}.png`,r=await fetch(source);if(!r.ok)throw Error('Back '+id);const file=`classic/back/${id}.png`;await fs.writeFile('dist/assets/'+file,Buffer.from(await r.arrayBuffer()));sources.push({file,source})}await fs.writeFile('dist/assets/sources.json',JSON.stringify(sources,null,2));
