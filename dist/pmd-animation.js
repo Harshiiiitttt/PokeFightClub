@@ -1,6 +1,6 @@
-import {EVOLVED_FORM_KEYS} from './form-art.js?v=21';
-import {spriteKey} from './sprite-form.js?v=21';
-import {visibleBounds,animationBounds,paintSprite} from './sprite-layout.js?v=21';
+import {EVOLVED_FORM_KEYS} from './form-art.js?v=32';
+import {spriteKey} from './sprite-form.js?v=32';
+import {visibleBounds,animationBounds,paintSprite} from './sprite-layout.js?v=32';
 
 export function animationFrame(anim,seconds,loop=true){
  const ds=anim.durations,total=ds.reduce((a,b)=>a+b,0);
@@ -262,7 +262,7 @@ export function gbaState(view,p,fallback){
  const width=raw?.naturalWidth||raw?.width||fallback?.naturalWidth||fallback?.width||0;
  const height=raw?.naturalHeight||raw?.height||fallback?.naturalHeight||fallback?.height||0;
  if(!width||!height)return null;
- const isBack=view.pmd?.[p.formKey]?.frontOnly?false:p.presentationFacing?p.presentationFacing==='back':p.team===1||(fallback?.dataset?.facing==='back');
+ const isBack=view.pmd?.[p.formKey]?.frontOnly?false:p.presentationFacing?p.presentationFacing==='back':p.trainerDuel?(fallback?.dataset?.facing==='back'):p.team===1||(fallback?.dataset?.facing==='back');
  const mirrorBack=fallback?.dataset?.mirrorBack==='1';
  const gba=ensureGbaSheet(fallback,p.id,isBack,mirrorBack);
  if(!gba)return null;
@@ -270,7 +270,7 @@ export function gbaState(view,p,fallback){
  const anim=gba.anims[name]||gba.anims.Idle;
  const key='gba-'+name+'-'+(isBack?'back':'front')+'-'+p.id;
  if(p.gbaAnimKey!==key){p.gbaAnimKey=key;p.gbaAnimStart=view.clock||0}
- const frame=animationFrame(anim,(view.clock||0)-(p.gbaAnimStart||0),!['Attack','Shoot','SpAttack','Hurt'].includes(name));
+ const frame=animationFrame(anim,((view.clock||0)-(p.gbaAnimStart||0))*(p.trainerDuel&&['Attack','Shoot','SpAttack'].includes(name)?p.duelAnimRate||1:1),!['Attack','Shoot','SpAttack','Hurt'].includes(name));
  return {anim,image:gba.sheet,row:anim.row,frame,bounds:gba.bounds};
 }
 
@@ -285,9 +285,32 @@ export function pmdState(view,p){
  if(image.height<anim.height*8)row=0;
  else if(!view.pmd?.[form]?.limitedDirections)row=(8-row)%8;
  const key=anim.name+'-'+row+'-'+form;if(p.animKey!==key){p.animKey=key;p.animStart=view.clock}
- return{anim,image,row,frame:animationFrame(anim,view.clock-p.animStart,!['Attack','Shoot','SpAttack','Hurt'].includes(name)),form};
+ return{anim,image,row,frame:animationFrame(anim,(view.clock-p.animStart)*(p.trainerDuel&&['Attack','Shoot','SpAttack'].includes(name)?p.duelAnimRate||1:1),!['Attack','Shoot','SpAttack','Hurt'].includes(name)),form};
 }
 
+function drawAshGreninjaForm(canvas,clock){
+ const c=canvas.getContext('2d'),cx=canvas.width/2,top=Number(canvas.dataset.bodyTop||-30),bh=Number(canvas.dataset.bodyHeight||56),cy=canvas.height/2+top+bh*.46,r=Math.max(22,bh*.56);
+ c.save();
+ // Subtle crimson-black Battle Bond tint over the head/crest pixels only.
+ c.globalCompositeOperation='source-atop';
+ const crest=c.createLinearGradient(0,canvas.height/2+top,0,canvas.height/2+top+bh*.42);
+ crest.addColorStop(0,'rgba(215,38,68,.32)');crest.addColorStop(1,'rgba(215,38,68,0)');
+ c.fillStyle=crest;c.fillRect(cx-r,canvas.height/2+top,r*2,bh*.45);
+ // Giant spinning crimson-cyan Water Shuriken & Bond aura behind Greninja's back.
+ c.globalCompositeOperation='destination-over';
+ const aura=c.createRadialGradient(cx,cy,r*.2,cx,cy,r*1.25);
+ aura.addColorStop(0,'rgba(85,225,255,.42)');aura.addColorStop(.65,'rgba(225,60,95,.2)');aura.addColorStop(1,'rgba(85,225,255,0)');
+ c.fillStyle=aura;c.beginPath();c.arc(cx,cy,r*1.25,0,Math.PI*2);c.fill();
+ c.translate(cx,cy);c.rotate(clock*3.8);
+ for(let i=0;i<4;i++){
+  c.rotate(Math.PI/2);
+  c.fillStyle='rgba(75,215,255,.88)';c.strokeStyle='rgba(235,252,255,.95)';c.lineWidth=1.4;
+  c.beginPath();c.moveTo(0,-4);c.quadraticCurveTo(r*.55,-r*.28,r,0);c.quadraticCurveTo(r*.45,r*.22,0,4);c.closePath();c.fill();c.stroke();
+ }
+ c.fillStyle='rgba(255,82,112,.92)';c.beginPath();c.arc(0,0,r*.22,0,Math.PI*2);c.fill();
+ c.fillStyle='#ffffff';c.beginPath();c.arc(0,0,r*.1,0,Math.PI*2);c.fill();
+ c.restore();
+}
 export function drawPmd(view,p){
  const canvas=p.el.querySelector('canvas');if(!canvas)return;
  const fallback=p.el.querySelector('img');if(fallback?.style)fallback.style.display='none';
@@ -299,6 +322,7 @@ export function drawPmd(view,p){
    canvas.style.display='block';
    const {anim,image,row,frame,bounds}=gba;
    paintSprite(canvas,image,{x:frame*anim.width,y:row*anim.height,width:anim.width,height:anim.height},p.id,bounds,bounds,megaScale,isRaid);
+   if(p.ashGreninja)drawAshGreninjaForm(canvas,view.clock||0);
    return;
   }
   const width=fallback.naturalWidth||fallback.width||0,height=fallback.naturalHeight||fallback.height||0;
@@ -306,6 +330,7 @@ export function drawPmd(view,p){
   canvas.style.display='block';
   const rect={x:0,y:0,width,height},bounds=visibleBounds(fallback,rect);
   paintSprite(canvas,fallback,rect,p.id,bounds,bounds,megaScale,isRaid);
+  if(p.ashGreninja)drawAshGreninjaForm(canvas,view.clock||0);
   return;
  }
  canvas.style.display='block';
@@ -316,4 +341,5 @@ export function drawPmd(view,p){
   reference={x:0,y:0,width:Math.max(front.width,back.width),height:Math.max(front.height,back.height)};
  }
  paintSprite(canvas,image,{x:frame*anim.width,y:row*anim.height,width:anim.width,height:anim.height},p.id,reference,pose,megaScale,isRaid);
+ if(p.ashGreninja)drawAshGreninjaForm(canvas,view.clock||0);
 }

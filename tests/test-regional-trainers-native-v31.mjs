@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createCanvas,Image} from '@napi-rs/canvas';
+import {view,studio} from './test-trainer-native.mjs';
+import {TRAINERS,trainerTeams,trainerPortrait,setTrainerIdentity} from '../dist/trainer-rosters.js';
+import {TRAINER_PRESETS} from '../dist/trainer-duel.js';
+import {buildMatchupTeams} from '../dist/battle-modes.js';
+import {createFighter} from '../dist/engine.js';
+import {drawStadiumLife,stadiumPulse} from '../dist/trainer-arena-life.js';
+const data=JSON.parse(fs.readFileSync('dist/pokemon.json')),manifest=JSON.parse(fs.readFileSync('dist/assets/pmd/manifest.json'));
+assert.equal(TRAINERS.length,20);assert.equal(new Set(TRAINERS.map(t=>t.id)).size,20);assert.equal(TRAINERS.filter(t=>t.id.startsWith('ash-')).length,8);
+for(const trainer of TRAINERS){assert.equal(trainer.team.length,6);assert.equal(new Set(trainer.team).size,6);const image=new Image();image.src=fs.readFileSync('dist/assets/trainers/'+trainer.art+'.png');assert(image.width>0);view.images['trainer-art-'+trainer.art]=image;
+ for(const id of trainer.team){assert(data[id]?.moves.length&&data[id].stats.length===6);const pack=manifest[id];assert(pack);if(id!==866)assert(pack.anims.Idle&&pack.anims.Walk,'Regional fighters need native movement '+id);for(const anim of Object.values(pack.anims)){assert(anim.width>0&&anim.height>0&&anim.durations.length);assert(fs.existsSync('dist/assets/'+anim.path));}for(const path of [`classic/front/${id}.png`,`classic/back/${id}.png`,`audio/${id}.mp3`])assert(fs.statSync('dist/assets/'+path).size>100);}
+}
+for(const preset of TRAINER_PRESETS){const built=buildMatchupTeams({mode:'trainer-duel',matchup:preset.id});assert.equal(built.teams.length,2);assert(built.teams.every(t=>t.length===6));}
+const custom=buildMatchupTeams({mode:'trainer-duel',matchup:'custom',trainerA:'ash-kalos',trainerB:'cynthia'});assert.deepEqual(custom.trainers,['ash-kalos','cynthia']);custom.teams[0][0]=1;assert.equal(TRAINERS.find(t=>t.id==='ash-kalos').team[0],25,'Team editing must not mutate templates');
+const shots=[];function save(name){studio.renderCompositeFrame();const c=createCanvas(540,960);c.getContext('2d').drawImage(studio.canvas.native,0,0);shots.push(c);fs.writeFileSync('D:/pokemon-reference/'+name+'-v31.png',c.toBuffer('image/png'));}
+function mount(ids){setTrainerIdentity(view,ids);const built=trainerTeams(ids);for(const id of new Set(built.teams.flat()))for(const anim of Object.values(view.pmd[id].anims)){const image=new Image();image.src=fs.readFileSync('dist/assets/'+anim.path);view.images['pmd-'+id+'-'+anim.name]=image;}view.mount(built.teams.flatMap((team,t)=>team.map((id,i)=>Object.assign(createFighter(data[id],t,0,{reserve:i>0,uidIndex:i}),{uid:t+'-'+i,reserve:i>0,trainerDuel:true}))));view.customTeamNames=built.titles;view.stage.querySelector('#intro-overlay').classList.add('hidden');view.stage.querySelector('#result').classList.add('hidden');view.arena='champion';view.drawArena();view.draw(.016);return built;}
+const built=mount(['ash-journeys','leon']);assert.equal(trainerPortrait(view,0),view.images['trainer-art-ash-capbackward']);assert.equal(trainerPortrait(view,1),view.images['trainer-art-leon']);view.matchIntro={names:built.titles,lineups:built.teams,start:view.presentationTime-1.2,duration:3.4};view.draw(.016);save('ash-leon-intro');view.matchIntro=null;view.draw(.016);save('regional-trainers-arena');
+// Mr. Rime has no available directional pack. Its actual local pixel art uses the existing animated GBA fallback.
+const rime=view.fighters.find(p=>p.id===866);rime.reserve=false;rime.pos={x:330,y:610};view.stage.querySelector('#fighters').append(view.createFighterEl(rime));view.draw(.016);const sprite=rime.el.querySelector('canvas').native.toBuffer('image/png');view.draw(.4);assert(!sprite.equals(rime.el.querySelector('canvas').native.toBuffer('image/png')),'Fallback sprite must remain animated');rime.reserve=true;rime.el.remove();rime.el=null;
+const canvas=createCanvas(540,960),c=canvas.getContext('2d'),hash=()=>canvas.toBuffer('image/png').toString('base64');
+for(const arena of ['champion','storm','coast','frost','forest','volcano','temporal','eclipse','crystal','spear','stadium']){const mock={trainerMode:true,cinematic:true,arena,clock:1,fighters:[],arenaReactions:[]};c.clearRect(0,0,540,960);drawStadiumLife(c,mock);const a=hash();c.clearRect(0,0,540,960);drawStadiumLife(c,mock);assert.equal(hash(),a,'Replay animation must be deterministic');mock.clock=1.5;c.clearRect(0,0,540,960);drawStadiumLife(c,mock);assert.notEqual(hash(),a,'Arena life must animate');mock.cinematic=false;c.clearRect(0,0,540,960);drawStadiumLife(c,mock);const still=hash();mock.clock=8;c.clearRect(0,0,540,960);drawStadiumLife(c,mock);assert.equal(hash(),still,'Reduced motion must stop arena life');}
+view.arena='storm';view.drawArena();view.clock=1;view.arenaReactions=[];view.draw(.016);save('storm-ripples');view.arenaReactions=[{x:100,y:530,power:1,color:'#a9dfff',start:view.clock-.2}];assert(stadiumPulse(view)>.8);view.draw(.016);save('impact-crowd-lights');view.clock+=1.5;assert.equal(stadiumPulse(view),0);
+mount(['ash-kalos','cynthia']);view.arena='forest';view.drawArena();view.draw(.016);save('kalos-sinnoh-forest');
+const montage=createCanvas(shots.length*270,480);shots.forEach((image,i)=>montage.getContext('2d').drawImage(image,i*270,0,270,480));fs.writeFileSync('D:/pokemon-reference/regional-trainers-preview-v31.png',montage.toBuffer('image/png'));
+console.log('PASS: 20 trainers / eight regional Ash choices, 94 local fighter assets, immutable team templates, selected trainer intro/HUD/pad art, animated Mr. Rime fallback, deterministic moving arena effects, heavy-hit pulse, and reduced motion.');
+

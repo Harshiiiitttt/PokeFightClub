@@ -1,0 +1,5 @@
+import fs from 'node:fs';
+const edit=(name,fn)=>{const path='dist/'+name;fs.writeFileSync(path,fn(fs.readFileSync(path,'utf8')));};
+edit('app.js',s=>"import {choreographTrainerExchange} from './trainer-combat.js?v=22';\n"+s.replace("return choreograph({...a,trainerDuel:currentMode==='trainer-duel'},{", "return (currentMode==='trainer-duel'?choreographTrainerExchange:choreograph)({...a,trainerDuel:currentMode==='trainer-duel'},{").replace('wait(Math.round(220/paceDivisor),token)',"wait(currentMode==='trainer-duel'?35:Math.round(220/paceDivisor),token)"));
+edit('battle-view.js',s=>"import {faceDuelOpponent} from './trainer-combat.js?v=22';\n"+s.replace('mount(fighters){','mount(fighters){this.trainerExchange=false;this.duelBeat=0;').replace("const img=p.el.querySelector('img'),hit=", "faceDuelOpponent(this,p);const img=p.el.querySelector('img'),hit="));
+edit('pmd-animation.js',s=>s.replace(":p.team===1||(fallback?.dataset?.facing==='back');", ":p.trainerDuel?(fallback?.dataset?.facing==='back'):p.team===1||(fallback?.dataset?.facing==='back');"));

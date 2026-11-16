@@ -155,3 +155,9 @@ dialog{font-family:Inter,sans-serif;background:#172231;border:1px solid #41516a;
 
 #hud-overlay{z-index:1100;pointer-events:none}.stage.faint-active .stage-bottom{opacity:0}
 .intro-overlay{background:radial-gradient(ellipse at center,#080f1a22,#080f1a77)}.prebattle-card{width:86%;padding:22px 18px 18px;border:1px solid #8d9ca8;border-top:3px solid #e6c77f;background:#111a27f2;border-radius:8px;box-shadow:0 12px 36px #0007}.ready-eyebrow{display:block;margin-bottom:12px;font:600 2.1cqw/1 Space Grotesk,Inter,sans-serif;letter-spacing:.18em;color:#eed392}.prebattle-card>small{display:block;font:500 2cqw/1.5 Inter,sans-serif;letter-spacing:.08em;color:#a9bac9}.ready-lineups{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}.ready-lineup{display:flex;align-items:center;justify-content:center;min-height:65px}.ready-lineup img{width:8.4cqw;height:10cqw;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 3px #0004)}.ready-lineup[data-count="1"] img{width:15cqw;height:16cqw}.ready-teams{margin:8px 0 21px;gap:10px}.ready-teams strong{font:600 2.8cqw/1.35 Inter,sans-serif;color:#f1a08d}.ready-teams strong:last-child{color:#efd083}.ready-teams b{font:italic 700 4cqw Space Grotesk,Inter,sans-serif}.intro-overlay #stage-start{border-radius:4px;min-height:44px;font:600 2.6cqw/1 Inter,sans-serif;letter-spacing:.05em}.intro-overlay .prebattle-card p{font:500 1.65cqw/1.4 Inter,sans-serif;margin-top:12px;letter-spacing:.04em}
+
+.trainer-duel-mode>.team-hud,.trainer-duel-mode .stage-bottom{display:none!important}.trainer-duel-mode #hud-overlay{z-index:1100}.ready-lineup[data-count="6"] img{width:5.2cqw;height:7cqw}
+
+.trainer-duel-mode .overhead-fighter{width:30%;height:16.875%}
+
+.stage.trainer-duel-mode{overflow:hidden;background:#172532}.trainer-duel-mode #battle-world{background:#172532}

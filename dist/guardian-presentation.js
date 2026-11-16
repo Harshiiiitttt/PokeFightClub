@@ -1,4 +1,4 @@
-import {applyFormArt} from './form-art.js?v=21';
+import {applyFormArt} from './form-art.js?v=32';
 export function presentGuardian(view,p,enabled){
  p.heroEntrance=enabled;p.presentationFacing=enabled?'front':null;p.direction=enabled?0:4;
  p.el?.classList.toggle('guardian-entrance-hero',enabled);

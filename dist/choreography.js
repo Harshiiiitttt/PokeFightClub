@@ -1,18 +1,20 @@
-import {beforeFinishingHit} from './finishing-hit.js?v=21';
-import {guardianHomes,guardianContactDistance} from './guardian-spacing.js?v=21';
-import {beginBeamStruggle,endBeamStruggle} from './beam-struggle.js?v=21';
-import {megaForms} from './mega.js?v=21';
-import {GUARDIAN_AWAKENINGS} from './battle-modes.js?v=21';
-import {applyFormArt,EVOLVED_FORM_KEYS} from './form-art.js?v=21';
-import {spriteExtent} from './sprite-layout.js?v=21';
-import {isContactMove,hitStrength} from './combat-feel.js?v=21';
-import {directionToward} from './pmd-animation.js?v=21';
-import {arenaMoveMultiplier} from './arena-catalog.js?v=21';
-import {title,colors,effectiveness} from './engine.js?v=21';
+import {trainerAttackStart,trainerAttackResult} from './trainer-duel.js?v=32';
+import {beforeFinishingHit} from './finishing-hit.js?v=32';
+import {guardianHomes,guardianContactDistance} from './guardian-spacing.js?v=32';
+import {beginBeamStruggle,endBeamStruggle} from './beam-struggle.js?v=32';
+import {megaForms} from './mega.js?v=32';
+import {GUARDIAN_AWAKENINGS} from './battle-modes.js?v=32';
+import {applyFormArt,EVOLVED_FORM_KEYS} from './form-art.js?v=32';
+import {spriteExtent} from './sprite-layout.js?v=32';
+import {isContactMove,hitStrength} from './combat-feel.js?v=32';
+import {directionToward} from './pmd-animation.js?v=32';
+import {arenaMoveMultiplier} from './arena-catalog.js?v=32';
+import {title,colors,effectiveness} from './engine.js?v=32';
 const signature=new Set(['thunder','roar-of-time','precipice-blades','spacial-rend','dragon-ascent','shadow-force','hydro-pump','solar-beam','aeroblast','dynamax-cannon','eternabeam','judgment','light-that-burns-the-sky','core-enforcer']);
 const assets={fire:'fireball',water:'waterwisp',electric:'electroball',grass:'energyball',ice:'iceball',ghost:'shadowball',psychic:'shadowball',dragon:'shadowball',dark:'shadowball',poison:'poisonwisp',fairy:'energyball',steel:'rock2',normal:'energyball',fighting:'energyball'};
 export async function choreograph(a,{view,audio,wait:w,valid,rng,log,onDamage}){
  const {actor,target,move,damage,mult,crit,dodge}=a,c=colors[move.type],source={...actor.pos},dest={...target.pos},dx=dest.x-source.x,dy=dest.y-source.y,dist=Math.max(1,Math.hypot(dx,dy)),nx=dx/dist,ny=dy/dist,raidClose=!a.spacedRaid&&!!(a.raidClose||actor.isBoss||target.isBoss),nativeContact=isContactMove(move),physical=nativeContact||raidClose,hero=signature.has(move.name),finisher=damage>=target.hp&&!dodge&&mult>0,strength=hitStrength({move,damage,target,crit,finisher}),heavy=strength>=.75,asset=assets[move.type]||'energyball',squad=a.squadAttackers||[],squadOrigins=squad.map(al=>({al,pos:{...(al.baseHome||al.pos)}}));
+ trainerAttackStart(view,a);
  let anticipated=false;
  const anticipate=async()=>{
   const amount=damage||Math.round(target.max*.65),hits=[{target,damage:amount,protected:raidClose&&view.canLowHpMega?.(target)},...(a.splashTargets||[]).map(target=>({target,damage:Math.max(1,Math.round(amount*.72)),protected:raidClose&&view.canLowHpMega?.(target)}))];
@@ -31,7 +33,7 @@ export async function choreograph(a,{view,audio,wait:w,valid,rng,log,onDamage}){
  if(move.fx==='beam'&&!raidClose)view.move(actor,{x:source.x-nx*14,y:source.y-ny*14},210);
  if(finisher)audio.duck?.(950);
  view.addFx('attack-dust',source,source,'#c7bb9f',380,{behindFighters:true});if(!physical)view.addFx('muzzle',view.mouth(actor,target),dest,c,230);audio.sfx(move.type,physical?'dash':'attack');if(move.fx==='beam'&&!['water','fire'].includes(move.type))audio.cue?.('beam',.6);
- const reach=a.spacedRaid?guardianContactDistance(actor,target):Math.max(42,Math.min(66,(spriteExtent(actor.id)+spriteExtent(target.id))*.38)),contact={x:dest.x-nx*reach,y:dest.y-ny*reach};
+ const reach=a.trainerDuel?Math.max(118,(spriteExtent(actor.id)+spriteExtent(target.id))*.625+8):a.spacedRaid?guardianContactDistance(actor,target):Math.max(42,Math.min(66,(spriteExtent(actor.id)+spriteExtent(target.id))*.38)),contact={x:dest.x-nx*reach,y:dest.y-ny*reach};
  if(dodge){const evasion={x:clamp(dest.x+(dest.x<270?48:-48),70,470),y:dest.y+(target.team===0?-22:22)};target.direction=directionToward(dest,evasion);view.move(target,evasion,190);}
  if(move.name==='shadow-force'){
   actor.el.style.opacity='0';view.addFx('portal',source,source,c,360);await w(180);if(!valid())return;actor.pos={x:dest.x+nx*reach,y:dest.y+ny*reach};view.addFx('portal',actor.pos,actor.pos,c,380);actor.el.style.opacity='1';actor.action='Attack';actor.animKey=null;await w(140);if(!valid())return;view.move(actor,contact,140);view.addFx('slash',actor.pos,dest,c,220);if(!await anticipate())return;await w(140);
@@ -87,8 +89,8 @@ export async function choreograph(a,{view,audio,wait:w,valid,rng,log,onDamage}){
  if(!valid())return;
  actor.lean=0;
  const lowHpMegas=[];
- if(dodge&&!(raidClose&&view.canLowHpMega?.(target))){audio.sfx(move.type,'miss');view.damage(target,'DODGED');log(title(target.name)+' dodges!');}
- else if(mult===0&&!(raidClose&&view.canLowHpMega?.(target))){view.damage(target,'IMMUNE');log('It has no effect on '+title(target.name)+'.');}
+ if(dodge&&!(raidClose&&view.canLowHpMega?.(target))){trainerAttackResult(view,a);audio.sfx(move.type,'miss');view.damage(target,'DODGED');log(title(target.name)+' dodges!');}
+ else if(mult===0&&!(raidClose&&view.canLowHpMega?.(target))){trainerAttackResult(view,a);view.damage(target,'IMMUNE');log('It has no effect on '+title(target.name)+'.');}
  else{
   const effDmg=damage||Math.round(target.max*.65);
   if(!await anticipate())return;
@@ -98,12 +100,12 @@ export async function choreograph(a,{view,audio,wait:w,valid,rng,log,onDamage}){
    target.hp=Math.max(1,Math.min(target.hp,Math.round(target.max*.2)));
    lowHpMegas.push(target);
   }
-  target.faintAt=view.clock+(raidClose?.08:.32);onDamage?.(effDmg,actor,target);view.impact(target,c,strength);view.updateHP(target);const shown=target.isBoss?effDmg:Math.min(100,Math.round(effDmg/target.max*100));view.damage(target,squad.length?`${crit?'CRIT ':'SQUAD '}−${shown}`:(crit?'CRITICAL −'+shown:'−'+shown),crit);audio.sfx(move.type,'impact',strength,move);if(heavy)view.burst(target.pos,'#b29c78',12);
+  trainerAttackResult(view,a);target.faintAt=view.clock+(raidClose?.08:.32);onDamage?.(effDmg,actor,target);view.impact(target,c,strength);view.updateHP(target);const shown=target.isBoss?effDmg:Math.min(100,Math.round(effDmg/target.max*100));view.damage(target,squad.length?`${crit?'CRIT ':'SQUAD '}−${shown}`:(crit?'CRITICAL −'+shown:'−'+shown),crit);audio.sfx(move.type,'impact',strength,move);if(heavy)view.burst(target.pos,'#b29c78',12);
   if(a.splashTargets?.length){for(const sub of a.splashTargets){const sd=Math.max(1,Math.round(effDmg*.72));sub.hp=Math.max(0,sub.hp-sd);if(raidClose&&view.canLowHpMega?.(sub)&&sub.hp<=sub.max*.65){sub.hp=Math.max(1,Math.min(sub.hp,Math.round(sub.max*.22)));lowHpMegas.push(sub);}sub.faintAt=view.clock+(raidClose?.08:.32);onDamage?.(sd,actor,sub);view.impact(sub,c,.32);view.updateHP(sub);if(!raidClose)view.damage(sub,'−'+Math.min(100,Math.round(sd/sub.max*100)),false);}}
   const recoil=finisher?36:heavy?25:15;view.move(target,{x:clamp(dest.x+nx*recoil,40,500),y:clamp(dest.y+ny*recoil,190,805)},180,0,0,'recoil');
   if(['fire','water','ice','ground','rock','electric'].includes(move.type))view.scar(dest,move.type);if(move.type==='water')view.addFx('splash',dest,dest,c,560);if(move.type==='ice')view.addFx('ice-shards',dest,dest,c,500);if(move.type==='fire'&&heavy)view.addFx('smoke',dest,dest,c,850);if(move.name==='thunder'&&!raidClose){await w(140);if(!valid())return;audio.sfx('electric','thunder');}
   log(`${effDmg} damage.${crit?' Critical hit!':''}${mult>1?' Super effective!':mult<1?' Not very effective.':''}`);
-  if(!raidClose){if(crit)view.message('A critical hit!',430);else if(mult>1)view.message('Super effective!',350);}
+  if(!raidClose&&!view.trainerMode){if(crit)view.message('A critical hit!',430);else if(mult>1)view.message('Super effective!',350);}
  }
  await w(raidClose?210:finisher?310:crit?220:140);if(!valid())return;view.label=null;
  if(physical){
@@ -128,7 +130,7 @@ export async function choreograph(a,{view,audio,wait:w,valid,rng,log,onDamage}){
    view.retireFainted?.(target);
    if((view.fighters?.filter(p=>p.team===target.team&&p.hp>0&&!p.reserve).length||0)<=8){await view.regroup?.(target.team,w,valid);}
   }else{
-   audio.sfx('normal','collapse');log(title(target.name)+' fainted!','ko');audio.cry(target.id,!!target.bundled);await w(650);if(!valid())return;view.retireFainted?.(target);const next=view.fighters?.find(p=>p.team===target.team&&p.reserve&&p.hp>0);if(next){next.slot=target.slot;view.message(title(next.name)+' enters!',520);log(title(next.name)+' enters as reinforcement for '+view.teamName(target.team)+'!');audio.cry(next.id,!!next.bundled);await view.spawnReinforcement?.(next,w,valid);}else if(!a.spacedRaid&&(view.fighters?.filter(p=>p.team===target.team&&p.hp>0&&!p.reserve).length||0)<=8){await view.regroup?.(target.team,w,valid);}
+   audio.sfx('normal','collapse');log(title(target.name)+' fainted!','ko');audio.cry(target.id,!!target.bundled);await w(650);if(!valid())return;view.retireFainted?.(target);const next=view.fighters?.find(p=>p.team===target.team&&p.reserve&&p.hp>0);if(next){next.slot=target.slot;if(!view.trainerMode)view.message(title(next.name)+' enters!',520);log(title(next.name)+' enters as reinforcement for '+view.teamName(target.team)+'!');if(!view.trainerMode)audio.cry(next.id,!!next.bundled);await view.spawnReinforcement?.(next,w,valid);}else if(!a.spacedRaid&&(view.fighters?.filter(p=>p.team===target.team&&p.hp>0&&!p.reserve).length||0)<=8){await view.regroup?.(target.team,w,valid);}
   }
  }
 }

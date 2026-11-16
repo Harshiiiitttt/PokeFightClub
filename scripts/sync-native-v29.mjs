@@ -1,0 +1,2 @@
+import fs from 'node:fs';
+const p='dist/duel-actions.js';let s=fs.readFileSync(p,'utf8');s=s.replace("const native=Math.max(50,view.attackDelay(p,action)||120);", "const anims=view.pmd?.[p.formKey||p.id]?.anims,anim=anims?.[action]||(action==='Shoot'?anims?.SpAttack:null);\n const native=Math.max(50,view.style!=='gba'&&anim?anim.durations.slice(0,anim.hit||1).reduce((a,b)=>a+b,0)/60*1000:view.attackDelay(p,action)||120);");fs.writeFileSync(p,s);

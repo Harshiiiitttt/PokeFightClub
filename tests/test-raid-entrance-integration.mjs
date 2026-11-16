@@ -1,0 +1,44 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+import {parseHTML} from 'linkedom';
+import {createFighter} from '../dist/engine.js';
+import {choreographAct2Wave,triggerBossPhase2} from '../dist/choreography.js';
+const {document}=parseHTML(await fs.readFile('dist/index.html','utf8'));globalThis.document=document;
+globalThis.requestAnimationFrame=()=>{};globalThis.matchMedia=()=>({matches:false});globalThis.localStorage={getItem:()=>null,setItem(){}};
+globalThis.Image=class{set src(v){this._src=v}};globalThis.Audio=class{play(){return Promise.resolve()}pause(){}};
+globalThis.fetch=async url=>new Response(await fs.readFile('dist/'+url));
+const gradient={addColorStop(){}};const ctx=new Proxy({measureText:s=>({width:s.length*7}),createLinearGradient:()=>gradient,createRadialGradient:()=>gradient},{get:(o,k)=>k in o?o[k]:()=>{}});
+for(const c of document.querySelectorAll('canvas'))c.getContext=()=>ctx;
+const root=pathToFileURL(process.cwd().replaceAll('\\','/')+'/dist/').href;
+let source=await fs.readFile('dist/app.js','utf8');source=source.replace(/from '\.\/([^']+)'/g,(_,p)=>`from '${root+p}'`);
+source+='\nexport {triggerLegendarySummonAct2,view,audioEngine,evolveMegaSurge}; export function setupRaidTest(list){fighters=list;rng=()=>.1;view.mount(list)}; export function buildRaidPreview(id){currentMode="eternatus-raid";teams=[[id],Array(50).fill(6)];renderTeams();return buildFightersList()}';
+const app=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+for(let i=0;i<30&&!document.querySelector('.overhead-fighter');i++)await new Promise(r=>setImmediate(r));
+const cache=JSON.parse(await fs.readFile('dist/pokemon.json','utf8'));
+const boss=createFighter(cache[890],0,0,{bossRaid:true,challengerCount:50});boss.act1LowestHpRatio=.4;boss.hp=2000;
+const fallen=Array.from({length:50},(_,i)=>{const p=createFighter(cache[6],1,i,{uidIndex:i});p.hp=0;return p});
+app.setupRaidTest([boss,...fallen]);const events=[],original=app.view.addFx.bind(app.view);app.view.addFx=(...args)=>{events.push(args);return original(...args)};
+const valid=()=>true,wait=async ms=>{app.view.draw(ms/1000);await Promise.resolve()};
+assert(await app.triggerLegendarySummonAct2(boss,wait,valid));
+const guardians=app.view.fighters.filter(p=>p.isGuardian);assert.deepEqual(guardians.map(p=>p.id),[383,382,384]);assert.deepEqual(guardians.map(p=>p.slot),[0,2,1]);
+assert.deepEqual(guardians.map(p=>p.name),['Primal Groudon','Primal Kyogre','Mega Rayquaza']);assert(guardians.every(p=>p.mega&&p.willMult===1.3));
+assert.deepEqual(guardians.map(p=>p.formKey),['mega-383','mega-382','mega-384']);assert.match(guardians[0].el.querySelector('img').src,/mega-383\/back-GBA\.png$/);assert.match(guardians[1].el.querySelector('img').src,/mega-382\/back-GBA\.png$/);
+assert.equal(boss.hp,boss.max);assert.deepEqual(boss.baseHome,{x:270,y:285});assert.equal(document.querySelectorAll('.guardian-unit').length,3);assert.equal(document.querySelectorAll('#hud-bottom .hud-mon').length,3);
+assert.equal(events.filter(e=>e[0]==='guardian-cutin').length,1);assert.equal(events.filter(e=>e[0]==='sky-pillar').length,3);
+const before=events.length;assert(await app.triggerLegendarySummonAct2(boss,wait,valid));assert.equal(events.length,before,'Entrance must run once');
+let clashStarted=false;const fx=app.view.addFx;app.view.addFx=(...args)=>{if(args[0]==='beam-clash')clashStarted=true;return fx(...args)};
+await choreographAct2Wave(app.view.fighters,{view:app.view,audio:app.audioEngine,wait,valid:()=>!clashStarted,rng:()=>.1,log(){}});
+assert(clashStarted,'First Act 2 action must launch the beam clash');const clash=events.find(e=>e[0]==='beam-clash');assert.deepEqual(clash[5].guardians.map(g=>g.pos.x),[152,388,270],'Clash must keep left/right/apex positions');
+console.log('PASS: real app 50-KO trigger, trio creation, awakened stats/names/HUD, one-shot entrance, full boss HP and direct correctly positioned 1v3 beam-clash handoff.');
+for(const [id,key] of [[890,'eternamax-890'],[718,'complete-718'],[800,'mega-800'],[384,'mega-384'],[487,'origin-487'],[483,'origin-483'],[484,'origin-484'],[6,'mega-6']]){
+ const phaseBoss=app.buildRaidPreview(id)[0];assert(app.view.teamName(0).toLowerCase().includes(phaseBoss.name.toLowerCase().replaceAll('-',' ')),'Custom boss heading must follow its selected species: '+id+' '+phaseBoss.name+' '+app.view.teamName(0));assert.equal(phaseBoss.formKey,undefined,'Phase 1 must use the normal form');assert(!phaseBoss.transformed);app.setupRaidTest([phaseBoss]);
+ assert(!phaseBoss.el.querySelector('img').dataset.form,'Preview must draw the normal sprite');
+ await triggerBossPhase2(phaseBoss,[phaseBoss],{view:app.view,audio:app.audioEngine,wait,valid,rng:()=>.1,log(){}});
+ assert.equal(phaseBoss.formKey,key);assert(phaseBoss.transformed);if(app.view.pmd[key].front)assert.equal(phaseBoss.el.querySelector('img').src,'assets/'+app.view.pmd[key].front);if(id===487){assert.equal(phaseBoss.name,'Origin Giratina');assert.match(document.querySelector('#hud-0-0 img').src,/origin-487\/front-GBA.png$/);}
+}
+console.log('PASS: actual raid previews stay normal in phase 1; boss phase transitions activate Eternamax, Complete, Ultra and Mega form artwork.');
+const normalBoss=app.buildRaidPreview(384)[0],ally=createFighter(cache[6],1,0);app.setupRaidTest([normalBoss,ally]);document.querySelector('#mega').checked=true;
+assert.equal(app.view.canLowHpMega(ally),false);await app.evolveMegaSurge(wait,valid);assert(!ally.mega&&!normalBoss.formKey,'No early raid transformations');
+normalBoss.phase2=true;const bossMax=normalBoss.max;assert(app.view.canLowHpMega(ally));await app.evolveMegaSurge(wait,valid);assert(ally.mega);assert.equal(normalBoss.max,bossMax,'Army Mega surge must never change boss stats');assert.equal(normalBoss.formKey,undefined,'Army Mega surge must never transform the boss');
+console.log('PASS: raid army transformations are gated to phase 2 and never replace boss stats or boss form.');

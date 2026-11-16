@@ -3570,5 +3570,4345 @@
   {
     "file": "pmd/eternamax-890-native/portrait.png",
     "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0890/0001/Normal.png"
+  },
+  {
+    "file": "classic/front/131.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/131.png"
+  },
+  {
+    "file": "classic/back/131.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/131.png"
+  },
+  {
+    "file": "audio/131.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/131.ogg"
+  },
+  {
+    "file": "pmd/131/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/AnimData.xml"
+  },
+  {
+    "file": "pmd/131/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/131/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/131/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/131/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/131/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/131/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/131/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/131/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0131/Normal.png"
+  },
+  {
+    "file": "pmd/131/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/credits.txt"
+  },
+  {
+    "file": "classic/front/143.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/143.png"
+  },
+  {
+    "file": "classic/back/143.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/143.png"
+  },
+  {
+    "file": "audio/143.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/143.ogg"
+  },
+  {
+    "file": "pmd/143/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/AnimData.xml"
+  },
+  {
+    "file": "pmd/143/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/143/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/143/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/143/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/143/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/143/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/143/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/143/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0143/Normal.png"
+  },
+  {
+    "file": "pmd/143/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/credits.txt"
+  },
+  {
+    "file": "classic/front/18.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/18.png"
+  },
+  {
+    "file": "classic/back/18.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/18.png"
+  },
+  {
+    "file": "audio/18.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/18.ogg"
+  },
+  {
+    "file": "pmd/18/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/AnimData.xml"
+  },
+  {
+    "file": "pmd/18/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/18/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/18/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/18/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/18/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/18/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/18/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/18/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0018/Normal.png"
+  },
+  {
+    "file": "pmd/18/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0018/credits.txt"
+  },
+  {
+    "file": "classic/front/65.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/65.png"
+  },
+  {
+    "file": "classic/back/65.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/65.png"
+  },
+  {
+    "file": "audio/65.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/65.ogg"
+  },
+  {
+    "file": "pmd/65/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/AnimData.xml"
+  },
+  {
+    "file": "pmd/65/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/65/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/65/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/65/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/65/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/65/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/65/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/65/SpAttack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/SpAttack-Anim.png"
+  },
+  {
+    "file": "pmd/65/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0065/Normal.png"
+  },
+  {
+    "file": "pmd/65/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0065/credits.txt"
+  },
+  {
+    "file": "classic/front/112.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/112.png"
+  },
+  {
+    "file": "classic/back/112.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/112.png"
+  },
+  {
+    "file": "audio/112.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/112.ogg"
+  },
+  {
+    "file": "pmd/112/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/AnimData.xml"
+  },
+  {
+    "file": "pmd/112/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/112/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/112/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/112/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/112/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/112/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/112/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/112/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0112/Normal.png"
+  },
+  {
+    "file": "pmd/112/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0112/credits.txt"
+  },
+  {
+    "file": "classic/front/103.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/103.png"
+  },
+  {
+    "file": "classic/back/103.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/103.png"
+  },
+  {
+    "file": "audio/103.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/103.ogg"
+  },
+  {
+    "file": "pmd/103/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/AnimData.xml"
+  },
+  {
+    "file": "pmd/103/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/103/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/103/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/103/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/103/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/103/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/103/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/103/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0103/Normal.png"
+  },
+  {
+    "file": "pmd/103/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0103/credits.txt"
+  },
+  {
+    "file": "classic/front/130.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/130.png"
+  },
+  {
+    "file": "classic/back/130.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/130.png"
+  },
+  {
+    "file": "audio/130.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/130.ogg"
+  },
+  {
+    "file": "pmd/130/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/AnimData.xml"
+  },
+  {
+    "file": "pmd/130/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/130/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/130/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/130/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/130/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/130/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/130/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/130/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0130/Normal.png"
+  },
+  {
+    "file": "pmd/130/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0130/credits.txt"
+  },
+  {
+    "file": "classic/front/59.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/59.png"
+  },
+  {
+    "file": "classic/back/59.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/59.png"
+  },
+  {
+    "file": "audio/59.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/59.ogg"
+  },
+  {
+    "file": "pmd/59/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/AnimData.xml"
+  },
+  {
+    "file": "pmd/59/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/59/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/59/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/59/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/59/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/59/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/59/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/59/Rumble-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/Rumble-Anim.png"
+  },
+  {
+    "file": "pmd/59/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0059/Normal.png"
+  },
+  {
+    "file": "pmd/59/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0059/credits.txt"
+  },
+  {
+    "file": "trainers/red.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/red.png"
+  },
+  {
+    "file": "trainers/blue.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/blue.png"
+  },
+  {
+    "file": "npc/red_normal.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/red_normal.png"
+  },
+  {
+    "file": "npc/blue.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/blue.png"
+  },
+  {
+    "file": "npc/boy.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/boy.png"
+  },
+  {
+    "file": "npc/lass.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/lass.png"
+  },
+  {
+    "file": "npc/cooltrainer_m.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/cooltrainer_m.png"
+  },
+  {
+    "file": "npc/cooltrainer_f.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/cooltrainer_f.png"
+  },
+  {
+    "file": "npc/gentleman.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/gentleman.png"
+  },
+  {
+    "file": "npc/sitting_boy.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/sitting_boy.png"
+  },
+  {
+    "file": "npc/cameraman.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/cameraman.png"
+  },
+  {
+    "file": "npc/gym_guy.png",
+    "source": "https://raw.githubusercontent.com/pret/pokefirered/master/graphics/object_events/pics/people/gym_guy.png"
+  },
+  {
+    "file": "classic/front/815.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/cinderace.png"
+  },
+  {
+    "file": "classic/back/815.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/cinderace.png"
+  },
+  {
+    "file": "audio/815.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/815.ogg"
+  },
+  {
+    "file": "pmd/815/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/AnimData.xml"
+  },
+  {
+    "file": "pmd/815/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/815/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/815/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/815/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/815/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/815/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/815/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/815/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0815/Normal.png"
+  },
+  {
+    "file": "pmd/815/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0815/credits.txt"
+  },
+  {
+    "file": "trainers/ash.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/ash.png"
+  },
+  {
+    "file": "classic/front/128.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/128.png"
+  },
+  {
+    "file": "classic/front/156.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/156.png"
+  },
+  {
+    "file": "classic/front/1.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/1.png"
+  },
+  {
+    "file": "classic/front/153.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/153.png"
+  },
+  {
+    "file": "classic/front/158.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/158.png"
+  },
+  {
+    "file": "classic/front/7.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/7.png"
+  },
+  {
+    "file": "classic/back/128.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/128.png"
+  },
+  {
+    "file": "classic/back/156.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/156.png"
+  },
+  {
+    "file": "classic/back/1.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/1.png"
+  },
+  {
+    "file": "classic/back/158.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/158.png"
+  },
+  {
+    "file": "classic/back/153.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/153.png"
+  },
+  {
+    "file": "classic/back/7.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/7.png"
+  },
+  {
+    "file": "trainers/ash-johto.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/ash-johto.png"
+  },
+  {
+    "file": "audio/156.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/156.ogg"
+  },
+  {
+    "file": "audio/128.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/128.ogg"
+  },
+  {
+    "file": "audio/1.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg"
+  },
+  {
+    "file": "audio/158.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/158.ogg"
+  },
+  {
+    "file": "audio/7.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/7.ogg"
+  },
+  {
+    "file": "audio/153.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/153.ogg"
+  },
+  {
+    "file": "trainers/ash-hoenn.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/ash-hoenn.png"
+  },
+  {
+    "file": "pmd/156/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/AnimData.xml"
+  },
+  {
+    "file": "pmd/128/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0128/AnimData.xml"
+  },
+  {
+    "file": "pmd/1/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/AnimData.xml"
+  },
+  {
+    "file": "pmd/156/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/1/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/128/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0128/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/7/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/AnimData.xml"
+  },
+  {
+    "file": "pmd/153/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/AnimData.xml"
+  },
+  {
+    "file": "pmd/158/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/AnimData.xml"
+  },
+  {
+    "file": "trainers/ash-sinnoh.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/ash-sinnoh.png"
+  },
+  {
+    "file": "pmd/1/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/7/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/156/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/128/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0128/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/158/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/153/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/1/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/7/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/156/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/128/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0128/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/158/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/153/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/Walk-Anim.png"
+  },
+  {
+    "file": "trainers/ash-unova.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/ash-unova.png"
+  },
+  {
+    "file": "pmd/7/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/1/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/156/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/128/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0128/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/158/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/153/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/1/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/156/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/7/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/128/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0128/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/158/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/153/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/Shoot-Anim.png"
+  },
+  {
+    "file": "trainers/ash-kalos.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/ash-kalos.png"
+  },
+  {
+    "file": "pmd/156/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/1/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/7/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/158/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/128/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0128/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/153/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/156/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/128/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0128/Normal.png"
+  },
+  {
+    "file": "pmd/1/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/158/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/7/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/153/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/Sleep-Anim.png"
+  },
+  {
+    "file": "trainers/ash-alola.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/ash-alola.png"
+  },
+  {
+    "file": "pmd/156/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0156/Normal.png"
+  },
+  {
+    "file": "pmd/1/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0001/Normal.png"
+  },
+  {
+    "file": "pmd/128/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0128/credits.txt"
+  },
+  {
+    "file": "pmd/158/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/7/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/153/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/156/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0156/credits.txt"
+  },
+  {
+    "file": "pmd/158/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0158/Normal.png"
+  },
+  {
+    "file": "pmd/7/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0007/Normal.png"
+  },
+  {
+    "file": "pmd/1/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/credits.txt"
+  },
+  {
+    "file": "pmd/153/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0153/Normal.png"
+  },
+  {
+    "file": "classic/front/164.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/164.png"
+  },
+  {
+    "file": "trainers/ash-capbackward.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/ash-capbackward.png"
+  },
+  {
+    "file": "classic/front/214.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/214.png"
+  },
+  {
+    "file": "pmd/158/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/credits.txt"
+  },
+  {
+    "file": "pmd/7/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/credits.txt"
+  },
+  {
+    "file": "pmd/153/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0153/credits.txt"
+  },
+  {
+    "file": "classic/back/214.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/214.png"
+  },
+  {
+    "file": "classic/back/164.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/164.png"
+  },
+  {
+    "file": "trainers/misty-gen3.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/misty-gen3.png"
+  },
+  {
+    "file": "audio/214.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/214.ogg"
+  },
+  {
+    "file": "classic/front/341.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/341.png"
+  },
+  {
+    "file": "classic/front/277.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/277.png"
+  },
+  {
+    "file": "audio/164.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/164.ogg"
+  },
+  {
+    "file": "classic/front/324.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/324.png"
+  },
+  {
+    "file": "classic/back/341.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/341.png"
+  },
+  {
+    "file": "classic/back/277.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/277.png"
+  },
+  {
+    "file": "pmd/214/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0214/AnimData.xml"
+  },
+  {
+    "file": "classic/front/362.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/362.png"
+  },
+  {
+    "file": "pmd/164/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/AnimData.xml"
+  },
+  {
+    "file": "trainers/brock-gen3.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/brock-gen3.png"
+  },
+  {
+    "file": "classic/back/324.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/324.png"
+  },
+  {
+    "file": "audio/341.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/341.ogg"
+  },
+  {
+    "file": "audio/277.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/277.ogg"
+  },
+  {
+    "file": "pmd/214/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0214/Idle-Anim.png"
+  },
+  {
+    "file": "classic/back/362.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/362.png"
+  },
+  {
+    "file": "pmd/164/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/Idle-Anim.png"
+  },
+  {
+    "file": "audio/324.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/324.ogg"
+  },
+  {
+    "file": "trainers/lance.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/lance.png"
+  },
+  {
+    "file": "audio/362.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/362.ogg"
+  },
+  {
+    "file": "pmd/214/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0214/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/164/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/277/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/AnimData.xml"
+  },
+  {
+    "file": "pmd/341/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/AnimData.xml"
+  },
+  {
+    "file": "pmd/324/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/AnimData.xml"
+  },
+  {
+    "file": "pmd/341/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/214/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0214/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/362/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/AnimData.xml"
+  },
+  {
+    "file": "pmd/277/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/164/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/Attack-Anim.png"
+  },
+  {
+    "file": "trainers/steven-gen6.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/steven-gen6.png"
+  },
+  {
+    "file": "pmd/324/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/214/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0214/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/362/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/277/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/341/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/164/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/324/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/Walk-Anim.png"
+  },
+  {
+    "file": "trainers/cynthia.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/cynthia.png"
+  },
+  {
+    "file": "pmd/214/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0214/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/324/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/362/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/164/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/341/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/277/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/214/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0214/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/324/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/164/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/277/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/362/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/341/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/214/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0214/Normal.png"
+  },
+  {
+    "file": "trainers/iris-gen5bw2.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/iris-gen5bw2.png"
+  },
+  {
+    "file": "pmd/164/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/362/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/324/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/341/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/277/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/214/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0214/credits.txt"
+  },
+  {
+    "file": "pmd/362/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/164/SpAttack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/SpAttack-Anim.png"
+  },
+  {
+    "file": "pmd/324/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/341/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/277/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/Sleep-Anim.png"
+  },
+  {
+    "file": "trainers/diantha.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/diantha.png"
+  },
+  {
+    "file": "pmd/164/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0164/Normal.png"
+  },
+  {
+    "file": "pmd/324/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/362/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/341/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/277/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/Charge-Anim.png"
+  },
+  {
+    "file": "classic/front/398.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/398.png"
+  },
+  {
+    "file": "pmd/324/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0324/Normal.png"
+  },
+  {
+    "file": "pmd/164/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0164/credits.txt"
+  },
+  {
+    "file": "pmd/362/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/341/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0341/Normal.png"
+  },
+  {
+    "file": "pmd/277/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0277/Normal.png"
+  },
+  {
+    "file": "classic/back/398.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/398.png"
+  },
+  {
+    "file": "trainers/alain.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/alain.png"
+  },
+  {
+    "file": "pmd/362/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0362/Normal.png"
+  },
+  {
+    "file": "pmd/324/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0324/credits.txt"
+  },
+  {
+    "file": "pmd/341/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0341/credits.txt"
+  },
+  {
+    "file": "pmd/277/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0277/credits.txt"
+  },
+  {
+    "file": "audio/398.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/398.ogg"
+  },
+  {
+    "file": "classic/front/389.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/389.png"
+  },
+  {
+    "file": "pmd/362/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0362/credits.txt"
+  },
+  {
+    "file": "classic/front/392.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/392.png"
+  },
+  {
+    "file": "classic/back/389.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/389.png"
+  },
+  {
+    "file": "pmd/398/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/AnimData.xml"
+  },
+  {
+    "file": "trainers/kukui.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/kukui.png"
+  },
+  {
+    "file": "classic/front/472.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/472.png"
+  },
+  {
+    "file": "classic/front/521.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/521.png"
+  },
+  {
+    "file": "classic/back/392.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/392.png"
+  },
+  {
+    "file": "classic/front/418.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/418.png"
+  },
+  {
+    "file": "audio/389.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/389.ogg"
+  },
+  {
+    "file": "pmd/398/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/Idle-Anim.png"
+  },
+  {
+    "file": "classic/back/472.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/472.png"
+  },
+  {
+    "file": "classic/back/418.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/418.png"
+  },
+  {
+    "file": "classic/back/521.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/521.png"
+  },
+  {
+    "file": "audio/392.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/392.ogg"
+  },
+  {
+    "file": "trainers/leon.png",
+    "source": "https://play.pokemonshowdown.com/sprites/trainers/leon.png"
+  },
+  {
+    "file": "audio/472.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/472.ogg"
+  },
+  {
+    "file": "pmd/398/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/389/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/AnimData.xml"
+  },
+  {
+    "file": "audio/418.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/418.ogg"
+  },
+  {
+    "file": "audio/521.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/521.ogg"
+  },
+  {
+    "file": "pmd/392/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/AnimData.xml"
+  },
+  {
+    "file": "pmd/398/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/389/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/472/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/AnimData.xml"
+  },
+  {
+    "file": "pmd/418/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/AnimData.xml"
+  },
+  {
+    "file": "pmd/521/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/AnimData.xml"
+  },
+  {
+    "file": "pmd/398/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/392/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/472/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/389/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/418/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/398/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/521/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/472/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/389/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/392/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/418/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/398/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/521/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/472/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/389/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/392/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/418/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/398/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/472/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/521/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/389/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/392/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/418/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/398/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0398/Normal.png"
+  },
+  {
+    "file": "pmd/472/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/389/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/392/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/521/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/418/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/398/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0398/credits.txt"
+  },
+  {
+    "file": "pmd/472/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/389/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/392/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/521/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/418/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/389/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0389/Normal.png"
+  },
+  {
+    "file": "pmd/472/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/Charge-Anim.png"
+  },
+  {
+    "file": "classic/front/501.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/501.png"
+  },
+  {
+    "file": "pmd/392/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/521/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/418/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/389/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0389/credits.txt"
+  },
+  {
+    "file": "pmd/392/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0392/Normal.png"
+  },
+  {
+    "file": "pmd/472/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0472/Normal.png"
+  },
+  {
+    "file": "classic/back/501.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/501.png"
+  },
+  {
+    "file": "pmd/521/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/418/RearUp-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/RearUp-Anim.png"
+  },
+  {
+    "file": "pmd/392/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0392/credits.txt"
+  },
+  {
+    "file": "pmd/472/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0472/credits.txt"
+  },
+  {
+    "file": "audio/501.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/501.ogg"
+  },
+  {
+    "file": "pmd/521/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0521/Normal.png"
+  },
+  {
+    "file": "classic/front/499.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/499.png"
+  },
+  {
+    "file": "pmd/418/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0418/Normal.png"
+  },
+  {
+    "file": "classic/front/553.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/553.png"
+  },
+  {
+    "file": "classic/front/542.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/542.png"
+  },
+  {
+    "file": "pmd/418/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0418/credits.txt"
+  },
+  {
+    "file": "pmd/501/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/AnimData.xml"
+  },
+  {
+    "file": "classic/back/499.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/499.png"
+  },
+  {
+    "file": "pmd/521/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0521/credits.txt"
+  },
+  {
+    "file": "classic/back/542.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/542.png"
+  },
+  {
+    "file": "classic/back/553.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/553.png"
+  },
+  {
+    "file": "audio/499.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/499.ogg"
+  },
+  {
+    "file": "pmd/501/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/Idle-Anim.png"
+  },
+  {
+    "file": "audio/553.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/553.ogg"
+  },
+  {
+    "file": "audio/542.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/542.ogg"
+  },
+  {
+    "file": "pmd/501/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/Walk-Anim.png"
+  },
+  {
+    "file": "classic/front/701.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/hawlucha.png"
+  },
+  {
+    "file": "classic/front/663.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/talonflame.png"
+  },
+  {
+    "file": "pmd/499/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/AnimData.xml"
+  },
+  {
+    "file": "pmd/553/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/AnimData.xml"
+  },
+  {
+    "file": "pmd/501/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/542/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/AnimData.xml"
+  },
+  {
+    "file": "pmd/499/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/553/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/Idle-Anim.png"
+  },
+  {
+    "file": "classic/back/701.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/hawlucha.png"
+  },
+  {
+    "file": "pmd/501/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/542/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/499/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/Walk-Anim.png"
+  },
+  {
+    "file": "classic/back/663.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/talonflame.png"
+  },
+  {
+    "file": "pmd/553/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/Walk-Anim.png"
+  },
+  {
+    "file": "audio/701.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/701.ogg"
+  },
+  {
+    "file": "pmd/499/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/Attack-Anim.png"
+  },
+  {
+    "file": "audio/663.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/663.ogg"
+  },
+  {
+    "file": "pmd/542/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/501/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/553/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/701/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0701/AnimData.xml"
+  },
+  {
+    "file": "pmd/499/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/663/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/AnimData.xml"
+  },
+  {
+    "file": "pmd/501/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/542/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/553/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/701/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0701/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/499/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/663/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/501/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/542/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/553/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/701/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0701/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/499/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/663/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/501/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0501/Normal.png"
+  },
+  {
+    "file": "pmd/553/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/542/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/701/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0701/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/499/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/663/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/501/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0501/credits.txt"
+  },
+  {
+    "file": "pmd/499/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0499/Normal.png"
+  },
+  {
+    "file": "pmd/701/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0701/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/663/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/542/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/553/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/499/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0499/credits.txt"
+  },
+  {
+    "file": "pmd/701/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0701/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/553/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0553/Normal.png"
+  },
+  {
+    "file": "pmd/663/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/542/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/Charge-Anim.png"
+  },
+  {
+    "file": "classic/front/715.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/noivern.png"
+  },
+  {
+    "file": "pmd/701/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0701/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/553/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0553/credits.txt"
+  },
+  {
+    "file": "pmd/542/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0542/Normal.png"
+  },
+  {
+    "file": "pmd/663/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/701/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0701/Normal.png"
+  },
+  {
+    "file": "classic/front/706.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/goodra.png"
+  },
+  {
+    "file": "pmd/542/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0542/credits.txt"
+  },
+  {
+    "file": "classic/back/715.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/noivern.png"
+  },
+  {
+    "file": "pmd/663/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/701/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0701/credits.txt"
+  },
+  {
+    "file": "pmd/663/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0663/Normal.png"
+  },
+  {
+    "file": "audio/715.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/715.ogg"
+  },
+  {
+    "file": "classic/front/722.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/rowlet.png"
+  },
+  {
+    "file": "classic/back/706.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/goodra.png"
+  },
+  {
+    "file": "pmd/663/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0663/credits.txt"
+  },
+  {
+    "file": "classic/front/727.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/incineroar.png"
+  },
+  {
+    "file": "pmd/715/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/AnimData.xml"
+  },
+  {
+    "file": "audio/706.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/706.ogg"
+  },
+  {
+    "file": "classic/back/722.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/rowlet.png"
+  },
+  {
+    "file": "pmd/715/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/706/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/AnimData.xml"
+  },
+  {
+    "file": "classic/back/727.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/incineroar.png"
+  },
+  {
+    "file": "audio/722.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/722.ogg"
+  },
+  {
+    "file": "classic/front/809.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/melmetal.png"
+  },
+  {
+    "file": "classic/front/745.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png"
+  },
+  {
+    "file": "pmd/715/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/706/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/Idle-Anim.png"
+  },
+  {
+    "file": "audio/727.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/727.ogg"
+  },
+  {
+    "file": "pmd/715/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/722/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/AnimData.xml"
+  },
+  {
+    "file": "pmd/706/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/Walk-Anim.png"
+  },
+  {
+    "file": "classic/back/809.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/melmetal.png"
+  },
+  {
+    "file": "pmd/727/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0727/AnimData.xml"
+  },
+  {
+    "file": "pmd/722/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/715/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/706/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/Attack-Anim.png"
+  },
+  {
+    "file": "classic/back/745.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/745.png"
+  },
+  {
+    "file": "audio/809.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/809.ogg"
+  },
+  {
+    "file": "pmd/727/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0727/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/722/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/715/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/706/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/Shoot-Anim.png"
+  },
+  {
+    "file": "audio/745.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/745.ogg"
+  },
+  {
+    "file": "pmd/727/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0727/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/809/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/AnimData.xml"
+  },
+  {
+    "file": "pmd/722/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/715/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/706/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/727/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0727/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/745/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/AnimData.xml"
+  },
+  {
+    "file": "pmd/809/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/722/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/715/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/706/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/727/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0727/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/745/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/809/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/715/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0715/Normal.png"
+  },
+  {
+    "file": "pmd/706/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/722/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/727/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0727/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/745/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/809/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/715/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0715/credits.txt"
+  },
+  {
+    "file": "pmd/706/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0706/Normal.png"
+  },
+  {
+    "file": "pmd/722/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/727/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0727/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/745/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/809/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/706/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0706/credits.txt"
+  },
+  {
+    "file": "pmd/722/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/727/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0727/Normal.png"
+  },
+  {
+    "file": "pmd/745/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/809/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/722/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0722/Normal.png"
+  },
+  {
+    "file": "classic/front/804.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/naganadel.png"
+  },
+  {
+    "file": "pmd/727/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0727/credits.txt"
+  },
+  {
+    "file": "pmd/745/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/809/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/722/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0722/credits.txt"
+  },
+  {
+    "file": "classic/front/865.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/sirfetchd.png"
+  },
+  {
+    "file": "pmd/745/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/809/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/Charge-Anim.png"
+  },
+  {
+    "file": "classic/back/804.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/naganadel.png"
+  },
+  {
+    "file": "classic/front/121.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/121.png"
+  },
+  {
+    "file": "classic/front/882.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/dracovish.png"
+  },
+  {
+    "file": "pmd/809/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0809/Normal.png"
+  },
+  {
+    "file": "pmd/745/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/Charge-Anim.png"
+  },
+  {
+    "file": "audio/804.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/804.ogg"
+  },
+  {
+    "file": "classic/back/865.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/sirfetchd.png"
+  },
+  {
+    "file": "classic/back/121.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/121.png"
+  },
+  {
+    "file": "pmd/745/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0745/Normal.png"
+  },
+  {
+    "file": "pmd/809/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0809/credits.txt"
+  },
+  {
+    "file": "audio/121.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/121.ogg"
+  },
+  {
+    "file": "audio/865.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/865.ogg"
+  },
+  {
+    "file": "classic/back/882.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/dracovish.png"
+  },
+  {
+    "file": "pmd/804/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/AnimData.xml"
+  },
+  {
+    "file": "pmd/745/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0745/credits.txt"
+  },
+  {
+    "file": "pmd/121/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/AnimData.xml"
+  },
+  {
+    "file": "classic/front/120.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/120.png"
+  },
+  {
+    "file": "pmd/865/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0865/AnimData.xml"
+  },
+  {
+    "file": "audio/882.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/882.ogg"
+  },
+  {
+    "file": "pmd/804/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/121/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/865/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0865/Idle-Anim.png"
+  },
+  {
+    "file": "classic/front/186.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/186.png"
+  },
+  {
+    "file": "classic/back/120.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/120.png"
+  },
+  {
+    "file": "pmd/804/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/882/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0882/AnimData.xml"
+  },
+  {
+    "file": "pmd/121/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/865/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0865/Walk-Anim.png"
+  },
+  {
+    "file": "audio/120.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/120.ogg"
+  },
+  {
+    "file": "classic/back/186.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/186.png"
+  },
+  {
+    "file": "pmd/882/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0882/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/804/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/865/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0865/Normal.png"
+  },
+  {
+    "file": "pmd/121/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/Attack-Anim.png"
+  },
+  {
+    "file": "audio/186.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/186.ogg"
+  },
+  {
+    "file": "pmd/882/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0882/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/804/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/120/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/AnimData.xml"
+  },
+  {
+    "file": "pmd/865/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0865/credits.txt"
+  },
+  {
+    "file": "pmd/121/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/120/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/186/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/AnimData.xml"
+  },
+  {
+    "file": "pmd/121/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/882/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0882/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/804/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/Hurt-Anim.png"
+  },
+  {
+    "file": "classic/front/222.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/222.png"
+  },
+  {
+    "file": "pmd/120/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/186/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/121/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/882/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0882/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/804/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/Sleep-Anim.png"
+  },
+  {
+    "file": "classic/back/222.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/222.png"
+  },
+  {
+    "file": "pmd/121/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/186/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/120/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/882/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0882/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/804/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/121/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0121/Normal.png"
+  },
+  {
+    "file": "pmd/120/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/186/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/804/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0804/Normal.png"
+  },
+  {
+    "file": "audio/222.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/222.ogg"
+  },
+  {
+    "file": "pmd/882/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0882/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/121/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0121/credits.txt"
+  },
+  {
+    "file": "pmd/186/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/120/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/804/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0804/credits.txt"
+  },
+  {
+    "file": "pmd/882/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0882/Normal.png"
+  },
+  {
+    "file": "pmd/222/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/AnimData.xml"
+  },
+  {
+    "file": "pmd/120/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/186/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/Hurt-Anim.png"
+  },
+  {
+    "file": "classic/front/54.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/54.png"
+  },
+  {
+    "file": "pmd/882/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0882/credits.txt"
+  },
+  {
+    "file": "pmd/222/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/120/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/186/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/Sleep-Anim.png"
+  },
+  {
+    "file": "classic/front/208.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/208.png"
+  },
+  {
+    "file": "classic/back/54.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/54.png"
+  },
+  {
+    "file": "pmd/222/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/Walk-Anim.png"
+  },
+  {
+    "file": "classic/front/74.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/74.png"
+  },
+  {
+    "file": "pmd/120/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0120/Normal.png"
+  },
+  {
+    "file": "pmd/186/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/Charge-Anim.png"
+  },
+  {
+    "file": "audio/54.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/54.ogg"
+  },
+  {
+    "file": "classic/back/74.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/74.png"
+  },
+  {
+    "file": "pmd/186/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0186/Normal.png"
+  },
+  {
+    "file": "pmd/222/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/120/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0120/credits.txt"
+  },
+  {
+    "file": "classic/back/208.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/208.png"
+  },
+  {
+    "file": "pmd/54/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/AnimData.xml"
+  },
+  {
+    "file": "audio/74.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/74.ogg"
+  },
+  {
+    "file": "pmd/222/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/186/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0186/credits.txt"
+  },
+  {
+    "file": "audio/208.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/208.ogg"
+  },
+  {
+    "file": "classic/front/169.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/169.png"
+  },
+  {
+    "file": "pmd/54/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/74/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/AnimData.xml"
+  },
+  {
+    "file": "pmd/222/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/Hurt-Anim.png"
+  },
+  {
+    "file": "classic/front/259.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/259.png"
+  },
+  {
+    "file": "pmd/208/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/AnimData.xml"
+  },
+  {
+    "file": "classic/back/169.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/169.png"
+  },
+  {
+    "file": "pmd/54/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/74/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/222/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/Sleep-Anim.png"
+  },
+  {
+    "file": "audio/169.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/169.ogg"
+  },
+  {
+    "file": "pmd/208/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/Idle-Anim.png"
+  },
+  {
+    "file": "classic/back/259.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/259.png"
+  },
+  {
+    "file": "pmd/54/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/74/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/222/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/208/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/Walk-Anim.png"
+  },
+  {
+    "file": "audio/259.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/259.ogg"
+  },
+  {
+    "file": "pmd/54/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/74/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/222/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0222/Normal.png"
+  },
+  {
+    "file": "pmd/169/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/AnimData.xml"
+  },
+  {
+    "file": "pmd/208/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/169/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/222/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0222/credits.txt"
+  },
+  {
+    "file": "pmd/74/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/259/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/AnimData.xml"
+  },
+  {
+    "file": "pmd/54/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/208/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/74/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/169/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/54/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/259/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/208/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/169/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/74/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/54/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/259/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/Walk-Anim.png"
+  },
+  {
+    "file": "classic/front/453.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/453.png"
+  },
+  {
+    "file": "pmd/208/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/74/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/169/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/54/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0054/Normal.png"
+  },
+  {
+    "file": "pmd/259/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/Attack-Anim.png"
+  },
+  {
+    "file": "classic/back/453.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/453.png"
+  },
+  {
+    "file": "pmd/74/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0074/Normal.png"
+  },
+  {
+    "file": "pmd/208/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/169/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/54/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/credits.txt"
+  },
+  {
+    "file": "pmd/259/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/Shoot-Anim.png"
+  },
+  {
+    "file": "audio/453.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/453.ogg"
+  },
+  {
+    "file": "pmd/208/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0208/Normal.png"
+  },
+  {
+    "file": "pmd/74/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/credits.txt"
+  },
+  {
+    "file": "pmd/169/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/259/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/Hurt-Anim.png"
+  },
+  {
+    "file": "classic/front/142.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/142.png"
+  },
+  {
+    "file": "pmd/453/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/AnimData.xml"
+  },
+  {
+    "file": "pmd/208/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0208/credits.txt"
+  },
+  {
+    "file": "pmd/169/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/259/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/Sleep-Anim.png"
+  },
+  {
+    "file": "classic/back/142.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/142.png"
+  },
+  {
+    "file": "classic/front/438.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/438.png"
+  },
+  {
+    "file": "pmd/453/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/169/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0169/Normal.png"
+  },
+  {
+    "file": "pmd/259/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/Charge-Anim.png"
+  },
+  {
+    "file": "classic/front/148.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/148.png"
+  },
+  {
+    "file": "audio/142.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/142.ogg"
+  },
+  {
+    "file": "classic/back/438.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/438.png"
+  },
+  {
+    "file": "pmd/453/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/169/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0169/credits.txt"
+  },
+  {
+    "file": "pmd/259/Withdraw-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/Withdraw-Anim.png"
+  },
+  {
+    "file": "pmd/142/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/AnimData.xml"
+  },
+  {
+    "file": "audio/438.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/438.ogg"
+  },
+  {
+    "file": "classic/back/148.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/148.png"
+  },
+  {
+    "file": "pmd/453/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/259/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0259/Normal.png"
+  },
+  {
+    "file": "classic/front/230.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/230.png"
+  },
+  {
+    "file": "pmd/142/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/Idle-Anim.png"
+  },
+  {
+    "file": "audio/148.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/148.ogg"
+  },
+  {
+    "file": "pmd/453/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/438/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/AnimData.xml"
+  },
+  {
+    "file": "pmd/259/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0259/credits.txt"
+  },
+  {
+    "file": "pmd/142/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/Walk-Anim.png"
+  },
+  {
+    "file": "classic/back/230.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/230.png"
+  },
+  {
+    "file": "pmd/453/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/148/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0148/AnimData.xml"
+  },
+  {
+    "file": "pmd/438/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/142/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/Attack-Anim.png"
+  },
+  {
+    "file": "classic/front/306.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/306.png"
+  },
+  {
+    "file": "audio/230.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/230.ogg"
+  },
+  {
+    "file": "pmd/453/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/148/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0148/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/438/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/Walk-Anim.png"
+  },
+  {
+    "file": "classic/back/306.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/306.png"
+  },
+  {
+    "file": "pmd/142/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/230/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/AnimData.xml"
+  },
+  {
+    "file": "pmd/453/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/148/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0148/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/438/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/142/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/Hurt-Anim.png"
+  },
+  {
+    "file": "audio/306.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/306.ogg"
+  },
+  {
+    "file": "pmd/453/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0453/Normal.png"
+  },
+  {
+    "file": "pmd/230/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/148/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0148/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/438/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/142/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/230/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/453/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0453/credits.txt"
+  },
+  {
+    "file": "pmd/306/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/AnimData.xml"
+  },
+  {
+    "file": "pmd/148/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0148/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/438/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/142/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/Charge-Anim.png"
+  },
+  {
+    "file": "classic/front/227.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/227.png"
+  },
+  {
+    "file": "classic/back/227.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/227.png"
+  },
+  {
+    "file": "pmd/230/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/148/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0148/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/306/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/142/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0142/Normal.png"
+  },
+  {
+    "file": "pmd/438/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/Sleep-Anim.png"
+  },
+  {
+    "file": "audio/227.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/227.ogg"
+  },
+  {
+    "file": "pmd/230/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/148/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0148/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/306/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/142/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0142/credits.txt"
+  },
+  {
+    "file": "pmd/438/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/148/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0148/Normal.png"
+  },
+  {
+    "file": "pmd/230/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/227/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/AnimData.xml"
+  },
+  {
+    "file": "pmd/306/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/438/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0438/Normal.png"
+  },
+  {
+    "file": "classic/front/344.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/344.png"
+  },
+  {
+    "file": "pmd/227/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/230/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/148/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0148/credits.txt"
+  },
+  {
+    "file": "pmd/306/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/438/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0438/credits.txt"
+  },
+  {
+    "file": "classic/back/344.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/344.png"
+  },
+  {
+    "file": "pmd/230/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/227/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/306/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/Hurt-Anim.png"
+  },
+  {
+    "file": "classic/front/346.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/346.png"
+  },
+  {
+    "file": "pmd/230/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0230/Normal.png"
+  },
+  {
+    "file": "audio/344.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/344.ogg"
+  },
+  {
+    "file": "pmd/227/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/Attack-Anim.png"
+  },
+  {
+    "file": "classic/front/348.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/348.png"
+  },
+  {
+    "file": "pmd/306/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/Sleep-Anim.png"
+  },
+  {
+    "file": "classic/back/346.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/346.png"
+  },
+  {
+    "file": "pmd/230/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0230/credits.txt"
+  },
+  {
+    "file": "pmd/227/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/344/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/AnimData.xml"
+  },
+  {
+    "file": "audio/346.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/346.ogg"
+  },
+  {
+    "file": "classic/back/348.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/348.png"
+  },
+  {
+    "file": "pmd/306/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/Charge-Anim.png"
+  },
+  {
+    "file": "classic/front/442.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/442.png"
+  },
+  {
+    "file": "pmd/227/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/344/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/306/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0306/Normal.png"
+  },
+  {
+    "file": "audio/348.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/348.ogg"
+  },
+  {
+    "file": "classic/back/442.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/442.png"
+  },
+  {
+    "file": "pmd/227/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/346/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/AnimData.xml"
+  },
+  {
+    "file": "pmd/344/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/306/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0306/credits.txt"
+  },
+  {
+    "file": "audio/442.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/442.ogg"
+  },
+  {
+    "file": "classic/front/350.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/350.png"
+  },
+  {
+    "file": "pmd/227/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/346/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/344/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/348/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/AnimData.xml"
+  },
+  {
+    "file": "classic/back/350.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/350.png"
+  },
+  {
+    "file": "pmd/227/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0227/Normal.png"
+  },
+  {
+    "file": "pmd/348/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/442/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/AnimData.xml"
+  },
+  {
+    "file": "audio/350.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/350.ogg"
+  },
+  {
+    "file": "pmd/346/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/344/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/227/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0227/credits.txt"
+  },
+  {
+    "file": "pmd/442/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/348/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/346/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/344/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/350/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/AnimData.xml"
+  },
+  {
+    "file": "pmd/348/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/442/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/Walk-Anim.png"
+  },
+  {
+    "file": "classic/front/407.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/407.png"
+  },
+  {
+    "file": "pmd/346/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/344/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/350/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/348/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/Shoot-Anim.png"
+  },
+  {
+    "file": "classic/back/407.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/407.png"
+  },
+  {
+    "file": "pmd/442/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/346/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/344/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/350/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/348/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/442/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/Shoot-Anim.png"
+  },
+  {
+    "file": "audio/407.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/407.ogg"
+  },
+  {
+    "file": "pmd/344/RearUp-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/RearUp-Anim.png"
+  },
+  {
+    "file": "pmd/346/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/350/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/348/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/442/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/344/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0344/Normal.png"
+  },
+  {
+    "file": "pmd/346/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/407/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/AnimData.xml"
+  },
+  {
+    "file": "pmd/350/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/348/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/442/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/344/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0344/credits.txt"
+  },
+  {
+    "file": "pmd/346/SpAttack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/SpAttack-Anim.png"
+  },
+  {
+    "file": "pmd/407/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/348/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0348/Normal.png"
+  },
+  {
+    "file": "pmd/350/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/442/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/346/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0346/Normal.png"
+  },
+  {
+    "file": "classic/front/468.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/468.png"
+  },
+  {
+    "file": "pmd/407/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/350/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/348/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0348/credits.txt"
+  },
+  {
+    "file": "pmd/442/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0442/Normal.png"
+  },
+  {
+    "file": "pmd/346/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0346/credits.txt"
+  },
+  {
+    "file": "pmd/350/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/Charge-Anim.png"
+  },
+  {
+    "file": "classic/back/468.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/468.png"
+  },
+  {
+    "file": "pmd/407/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/442/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0442/credits.txt"
+  },
+  {
+    "file": "classic/front/612.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/612.png"
+  },
+  {
+    "file": "pmd/350/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0350/Normal.png"
+  },
+  {
+    "file": "audio/468.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/468.ogg"
+  },
+  {
+    "file": "classic/front/530.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/530.png"
+  },
+  {
+    "file": "pmd/407/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/Shoot-Anim.png"
+  },
+  {
+    "file": "classic/back/612.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/612.png"
+  },
+  {
+    "file": "classic/front/567.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/567.png"
+  },
+  {
+    "file": "pmd/350/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0350/credits.txt"
+  },
+  {
+    "file": "pmd/468/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/AnimData.xml"
+  },
+  {
+    "file": "classic/back/530.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/530.png"
+  },
+  {
+    "file": "pmd/407/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/Hurt-Anim.png"
+  },
+  {
+    "file": "audio/612.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/612.ogg"
+  },
+  {
+    "file": "classic/back/567.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/567.png"
+  },
+  {
+    "file": "classic/front/621.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/621.png"
+  },
+  {
+    "file": "pmd/407/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/468/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/Idle-Anim.png"
+  },
+  {
+    "file": "audio/530.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/530.ogg"
+  },
+  {
+    "file": "audio/567.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/567.ogg"
+  },
+  {
+    "file": "pmd/612/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/AnimData.xml"
+  },
+  {
+    "file": "classic/back/621.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/621.png"
+  },
+  {
+    "file": "pmd/407/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/468/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/530/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/AnimData.xml"
+  },
+  {
+    "file": "pmd/612/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/567/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/AnimData.xml"
+  },
+  {
+    "file": "pmd/407/Twirl-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/Twirl-Anim.png"
+  },
+  {
+    "file": "audio/621.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/621.ogg"
+  },
+  {
+    "file": "pmd/468/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/530/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/612/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/407/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0407/Normal.png"
+  },
+  {
+    "file": "pmd/567/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/621/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/AnimData.xml"
+  },
+  {
+    "file": "pmd/468/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/530/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/407/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0407/credits.txt"
+  },
+  {
+    "file": "pmd/612/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/567/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/621/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/468/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/530/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/567/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/612/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/621/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/468/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/530/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/612/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/567/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/621/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/Attack-Anim.png"
+  },
+  {
+    "file": "classic/front/697.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/tyrantrum.png"
+  },
+  {
+    "file": "pmd/530/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/468/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/567/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/612/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/621/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/468/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0468/Normal.png"
+  },
+  {
+    "file": "pmd/530/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/567/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/612/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/621/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/Hurt-Anim.png"
+  },
+  {
+    "file": "classic/back/697.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/tyrantrum.png"
+  },
+  {
+    "file": "pmd/468/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0468/credits.txt"
+  },
+  {
+    "file": "pmd/530/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/567/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/612/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0612/Normal.png"
+  },
+  {
+    "file": "pmd/621/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/Sleep-Anim.png"
+  },
+  {
+    "file": "audio/697.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/697.ogg"
+  },
+  {
+    "file": "pmd/530/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0530/Normal.png"
+  },
+  {
+    "file": "pmd/567/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0567/Normal.png"
+  },
+  {
+    "file": "pmd/612/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0612/credits.txt"
+  },
+  {
+    "file": "pmd/621/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/697/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/AnimData.xml"
+  },
+  {
+    "file": "pmd/530/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0530/credits.txt"
+  },
+  {
+    "file": "pmd/567/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0567/credits.txt"
+  },
+  {
+    "file": "classic/front/699.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/aurorus.png"
+  },
+  {
+    "file": "pmd/621/RearUp-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/RearUp-Anim.png"
+  },
+  {
+    "file": "pmd/697/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/621/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0621/Normal.png"
+  },
+  {
+    "file": "classic/front/625.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/625.png"
+  },
+  {
+    "file": "classic/back/699.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/aurorus.png"
+  },
+  {
+    "file": "pmd/697/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/Walk-Anim.png"
+  },
+  {
+    "file": "classic/front/461.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/461.png"
+  },
+  {
+    "file": "classic/back/625.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/625.png"
+  },
+  {
+    "file": "pmd/621/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0621/credits.txt"
+  },
+  {
+    "file": "classic/front/711.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png"
+  },
+  {
+    "file": "audio/699.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/699.ogg"
+  },
+  {
+    "file": "classic/back/461.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/461.png"
+  },
+  {
+    "file": "pmd/697/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/Attack-Anim.png"
+  },
+  {
+    "file": "audio/625.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/625.ogg"
+  },
+  {
+    "file": "classic/front/248.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/248.png"
+  },
+  {
+    "file": "pmd/699/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/AnimData.xml"
+  },
+  {
+    "file": "audio/461.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/461.ogg"
+  },
+  {
+    "file": "pmd/697/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/Shoot-Anim.png"
+  },
+  {
+    "file": "classic/back/248.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/back/248.png"
+  },
+  {
+    "file": "pmd/625/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/AnimData.xml"
+  },
+  {
+    "file": "pmd/699/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/461/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/AnimData.xml"
+  },
+  {
+    "file": "audio/248.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/248.ogg"
+  },
+  {
+    "file": "pmd/697/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/Hurt-Anim.png"
+  },
+  {
+    "file": "classic/back/711.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/711.png"
+  },
+  {
+    "file": "pmd/625/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/699/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/461/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/697/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/248/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/AnimData.xml"
+  },
+  {
+    "file": "audio/711.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/711.ogg"
+  },
+  {
+    "file": "pmd/699/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/625/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/461/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/248/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/697/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/711/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/AnimData.xml"
+  },
+  {
+    "file": "pmd/625/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/699/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/461/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/697/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0697/Normal.png"
+  },
+  {
+    "file": "pmd/248/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/711/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/625/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/699/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/461/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/697/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0697/credits.txt"
+  },
+  {
+    "file": "pmd/248/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/711/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/625/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/699/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/461/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/248/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/625/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/711/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/Attack-Anim.png"
+  },
+  {
+    "file": "classic/front/628.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/628.png"
+  },
+  {
+    "file": "pmd/699/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/461/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/248/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/625/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/711/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/Shoot-Anim.png"
+  },
+  {
+    "file": "classic/back/628.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/628.png"
+  },
+  {
+    "file": "pmd/699/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0699/Normal.png"
+  },
+  {
+    "file": "pmd/461/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/248/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/625/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0625/Normal.png"
+  },
+  {
+    "file": "pmd/711/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/Hurt-Anim.png"
+  },
+  {
+    "file": "audio/628.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/628.ogg"
+  },
+  {
+    "file": "pmd/461/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0461/Normal.png"
+  },
+  {
+    "file": "pmd/699/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0699/credits.txt"
+  },
+  {
+    "file": "pmd/248/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/711/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/625/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0625/credits.txt"
+  },
+  {
+    "file": "pmd/461/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0461/credits.txt"
+  },
+  {
+    "file": "pmd/628/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/AnimData.xml"
+  },
+  {
+    "file": "pmd/248/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0248/Normal.png"
+  },
+  {
+    "file": "classic/front/462.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/462.png"
+  },
+  {
+    "file": "pmd/711/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/Charge-Anim.png"
+  },
+  {
+    "file": "classic/front/395.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/395.png"
+  },
+  {
+    "file": "pmd/628/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/248/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0248/credits.txt"
+  },
+  {
+    "file": "pmd/711/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0711/Normal.png"
+  },
+  {
+    "file": "classic/back/462.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/462.png"
+  },
+  {
+    "file": "classic/back/395.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/395.png"
+  },
+  {
+    "file": "pmd/628/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/711/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0711/credits.txt"
+  },
+  {
+    "file": "audio/462.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/462.ogg"
+  },
+  {
+    "file": "audio/395.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/395.ogg"
+  },
+  {
+    "file": "classic/front/887.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/dragapult.png"
+  },
+  {
+    "file": "pmd/628/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/Attack-Anim.png"
+  },
+  {
+    "file": "classic/front/812.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/rillaboom.png"
+  },
+  {
+    "file": "pmd/462/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/AnimData.xml"
+  },
+  {
+    "file": "classic/front/537.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/537.png"
+  },
+  {
+    "file": "pmd/395/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/AnimData.xml"
+  },
+  {
+    "file": "pmd/628/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/462/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/Idle-Anim.png"
+  },
+  {
+    "file": "classic/back/537.png",
+    "source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/back/537.png"
+  },
+  {
+    "file": "pmd/395/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/628/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/Hurt-Anim.png"
+  },
+  {
+    "file": "classic/back/887.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/dragapult.png"
+  },
+  {
+    "file": "classic/back/812.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/rillaboom.png"
+  },
+  {
+    "file": "pmd/462/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/Walk-Anim.png"
+  },
+  {
+    "file": "audio/537.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/537.ogg"
+  },
+  {
+    "file": "audio/887.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/887.ogg"
+  },
+  {
+    "file": "pmd/628/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/395/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/Walk-Anim.png"
+  },
+  {
+    "file": "audio/812.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/812.ogg"
+  },
+  {
+    "file": "pmd/462/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/537/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/AnimData.xml"
+  },
+  {
+    "file": "pmd/887/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/AnimData.xml"
+  },
+  {
+    "file": "pmd/462/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/812/AnimData.xml",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/AnimData.xml"
+  },
+  {
+    "file": "pmd/628/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/395/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/537/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/887/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/462/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/628/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0628/Normal.png"
+  },
+  {
+    "file": "pmd/812/Idle-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/Idle-Anim.png"
+  },
+  {
+    "file": "pmd/395/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/537/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/887/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/462/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/628/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0628/credits.txt"
+  },
+  {
+    "file": "pmd/812/Walk-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/Walk-Anim.png"
+  },
+  {
+    "file": "pmd/395/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/537/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/887/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/462/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/812/Attack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/Attack-Anim.png"
+  },
+  {
+    "file": "pmd/395/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/887/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/537/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/Shoot-Anim.png"
+  },
+  {
+    "file": "pmd/462/SpAttack-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/SpAttack-Anim.png"
+  },
+  {
+    "file": "pmd/812/Shoot-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/Shoot-Anim.png"
+  },
+  {
+    "file": "classic/front/866.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5/mrrime.png"
+  },
+  {
+    "file": "pmd/395/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/887/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/537/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/462/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0462/Normal.png"
+  },
+  {
+    "file": "pmd/812/Hurt-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/Hurt-Anim.png"
+  },
+  {
+    "file": "pmd/395/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0395/Normal.png"
+  },
+  {
+    "file": "pmd/887/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/537/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/Sleep-Anim.png"
+  },
+  {
+    "file": "pmd/462/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0462/credits.txt"
+  },
+  {
+    "file": "pmd/812/Sleep-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/Sleep-Anim.png"
+  },
+  {
+    "file": "classic/back/866.png",
+    "source": "https://play.pokemonshowdown.com/sprites/gen5-back/mrrime.png"
+  },
+  {
+    "file": "pmd/395/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0395/credits.txt"
+  },
+  {
+    "file": "pmd/887/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/537/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/Charge-Anim.png"
+  },
+  {
+    "file": "pmd/812/Charge-Anim.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/Charge-Anim.png"
+  },
+  {
+    "file": "audio/866.ogg",
+    "source": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/866.ogg"
+  },
+  {
+    "file": "pmd/887/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0887/Normal.png"
+  },
+  {
+    "file": "pmd/812/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0812/Normal.png"
+  },
+  {
+    "file": "pmd/537/portrait.png",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0537/Normal.png"
+  },
+  {
+    "file": "pmd/887/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0887/credits.txt"
+  },
+  {
+    "file": "pmd/812/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0812/credits.txt"
+  },
+  {
+    "file": "pmd/537/credits.txt",
+    "source": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0537/credits.txt"
   }
 ]

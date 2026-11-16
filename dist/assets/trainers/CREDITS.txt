@@ -1,0 +1,7 @@
+Red and Blue trainer sprite artwork: Pokémon / Game Freak / Nintendo, as distributed by Pokémon Showdown.
+Sources:
+https://play.pokemonshowdown.com/sprites/trainers/red.png
+https://play.pokemonshowdown.com/sprites/trainers/blue.png
+Trainer sprites are game artwork, not original open-source artwork.
+
+Regional trainer portraits: Pokémon Showdown trainer sprite collection. Official game art and credited community anime sprites; not all artwork is open-source. See individual source URLs in assets/sources.json and https://play.pokemonshowdown.com/sprites/trainers/ for sprite artist credits.

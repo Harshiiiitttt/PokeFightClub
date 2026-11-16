@@ -1,0 +1,3 @@
+import fs from 'node:fs';
+let p='dist/trainer-hud-art.js',s=fs.readFileSync(p,'utf8');s=s.replace("const source=head?{x:b.x,y:b.y,width:b.width,height:Math.min(b.height,b.width*.96)}:b;", "let source=b;if(head){const area={x:b.x,y:b.y,width:b.width,height:Math.ceil(b.height*.3)},face=visibleBounds(image,area);source={x:area.x+face.x,y:area.y+face.y,width:face.width,height:face.height};}");fs.writeFileSync(p,s);
+p='test-framing-size-v28.mjs';s=fs.readFileSync(p,'utf8').replace("<110,'Ranged preparation should close into duel distance too'",">=188,'Ranged preparation should preserve a readable firing lane'").replace('close ranged/contact movement','ranged firing lanes and close contact movement');fs.writeFileSync(p,s);

@@ -1,0 +1,2 @@
+FireRed overworld character sprite sheets: Pokémon / Game Freak / Nintendo. Sourced from the pret/pokefirered decompilation repository, graphics/object_events/pics/people/. Original sheets retained in source/; runtime copies preserve sprite pixels with transparent backgrounds.
+https://github.com/pret/pokefirered/tree/master/graphics/object_events/pics/people

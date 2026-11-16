@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+const edit=(f,fn)=>{const p='dist/'+f,s=fs.readFileSync(p,'utf8'),n=fn(s);if(s===n)throw Error('No change '+f);fs.writeFileSync(p,n)};
+edit('arena-layout.js',s=>s.replace('y:198','y:264').replace('y:238','y:304').replace('y:218','y:284').replace('y:843','y:744').replace('y:883','y:784').replace('y:863','y:764')+'\nexport const DUEL_FIELD={left:82,right:458,top:390,bottom:700};\n');
+edit('duel-clearance.js',s=>"import {DUEL_FIELD} from './arena-layout.js?v=28';\n"+s.replace("min=axis==='x'?82:320,max=axis==='x'?458:750","min=axis==='x'?DUEL_FIELD.left:DUEL_FIELD.top,max=axis==='x'?DUEL_FIELD.right:DUEL_FIELD.bottom"));
+edit('trainer-combat.js',s=>{
+s="import {DUEL_FIELD} from './arena-layout.js?v=28';\nimport {duelDashSound,playDuelAction} from './duel-actions.js?v=28';\n"+s;
+s=s.replace('clamp(p.x,82,458),y:clamp(p.y,320,750)','clamp(p.x,DUEL_FIELD.left,DUEL_FIELD.right),y:clamp(p.y,DUEL_FIELD.top,DUEL_FIELD.bottom)').replace('335+ey,730-ey','DUEL_FIELD.top+ey,DUEL_FIELD.bottom-ey');
+s=s.replace("if(closing)view.addFx", "if(closing)duelDashSound(audio,.38);\n  if(closing)view.addFx");
+s=s.replace("audio.sfx(move.type,'miss');","view.addFx('approach-sweep',dest,evade,'#dbeeff',180,{fighter:target,easing:'recoil',behindFighters:true});duelDashSound(audio,.55);");
+s=s.replace("}else{target.action=heavy?'Charge':null;target.charge=false;}","}else{target.action=heavy?'Charge':null;target.charge=false;if(heavy){resetPose(target);view.addFx('brace-ground',dest,dest,c,280,{behindFighters:true});}}" );
+s=s.replace("audio.sfx(move.type,'dash');","duelDashSound(audio,.72);");
+s=s.replace("actor.action='Attack';resetPose(actor);await w(Math.min(heavy?140:85,view.attackDelay(actor,'Attack')))","await w(playDuelAction(view,actor,'Attack',heavy?140:85))");
+s=s.replace("actor.action='Shoot';resetPose(actor);await w(Math.min(heavy?150:85,view.attackDelay(actor,'Shoot')))","await w(playDuelAction(view,actor,'Shoot',heavy?150:85))");
+s=s.replace("const count=move.name", "if(move.fx==='slash')view.addFx('claw-followthrough',hitPoint,dest,c,240);\n   const count=move.name");
+s=s.replace("step(view,target,{x:dest.x+nx*(finisher?41:heavy?32:19),y:dest.y+ny*(finisher?41:heavy?32:19)},finisher?280:150,'recoil');", "const skid=field({x:dest.x+nx*(finisher?41:heavy?32:19),y:dest.y+ny*(finisher?41:heavy?32:19)});view.addFx('skid-ground',dest,skid,'#cbbd9b',finisher?500:360,{behindFighters:true});step(view,target,skid,finisher?280:150,'recoil');");
+s=s.replace('p.charge=false;p.action=null;if(valid())','p.charge=false;p.action=null;p.duelAnimRate=1;if(valid())');return s;});
+edit('pmd-animation.js',s=>s.replace("(view.clock||0)-(p.gbaAnimStart||0)","((view.clock||0)-(p.gbaAnimStart||0))*(p.trainerDuel&&['Attack','Shoot','SpAttack'].includes(name)?p.duelAnimRate||1:1)").replace('view.clock-p.animStart,','(view.clock-p.animStart)*(p.trainerDuel&&[\'Attack\',\'Shoot\',\'SpAttack\'].includes(name)?p.duelAnimRate||1:1),'));
+edit('battle-view.js',s=>"import {drawDuelReaction} from './duel-actions.js?v=28';\n"+s.replace('if(drawDuelApproach(c,e,t,this)||','if(drawDuelReaction(c,e,t,this)||drawDuelApproach(c,e,t,this)||'));
+edit('trainer-duel.js',s=>"import {drawDramaticTrainerIntro} from './trainer-intro.js?v=28';\n"+s.replace(/export function drawTrainerIntro\(c,view\)\{[\s\S]*?\n\}\nexport async function playTrainerOutro/,"export function drawTrainerIntro(c,view){drawDramaticTrainerIntro(c,view);}\nexport async function playTrainerOutro"));
+edit('overworld-arena.js',s=>"import {drawArenaAtmosphere} from './arena-atmosphere.js?v=28';\n"+s.replace('drawChannelBoards(c,view);','drawChannelBoards(c,view);drawArenaAtmosphere(c,view);'));
+edit('battle-audio.js',s=>s.replace("['charge','whoosh'","['dash','charge','whoosh'").replace(' countdownCue(step)'," dash(gain=.7){this.duck(350);this.cue('dash',gain);}\n countdownCue(step)"));
+edit('app.js',s=>s.replace("?(cinematic?3:.5)","?(cinematic?3.4:.6)").replace('  if(!await wait(introDuration*1000,token,true,true))return;',"  if(currentMode==='trainer-duel'&&cinematic){if(!await wait(900,token,true,true))return;audioEngine.cue('heavy',.55);if(!await wait(introDuration*1000-900,token,true,true))return;}else if(!await wait(introDuration*1000,token,true,true))return;"));

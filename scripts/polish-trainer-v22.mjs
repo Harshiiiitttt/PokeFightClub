@@ -1,0 +1,6 @@
+import fs from 'node:fs';
+const edit=(name,fn)=>{const p='dist/'+name;fs.writeFileSync(p,fn(fs.readFileSync(p,'utf8')));};
+edit('trainer-duel.js',s=>s.replace('trainer(c,95,y,team,3.6,true);',"trainer(c,95,y,team,3.6,true,view.images['trainer-'+team]);").replace('trainer(c,270,404,s.winner,2.6,true);',"trainer(c,270,404,s.winner,2.6,true,view.images['trainer-'+s.winner]);"));
+edit('battle-view.js',s=>s.replace("this.load('tiles','assets/general-tiles.png');","this.load('trainer-0','assets/trainers/red.png');this.load('trainer-1','assets/trainers/blue.png');this.load('tiles','assets/general-tiles.png');"));
+edit('choreography.js',s=>s.replace("if(!raidClose){if(crit)view.message", "if(!raidClose&&!view.trainerMode){if(crit)view.message"));
+const p='test-trainer-native.mjs';let s=fs.readFileSync(p,'utf8');s=s.replace('const fighters=preset.teams.flatMap',"for(const [team,name] of ['red','blue'].entries()){const img=new Image();img.src=fs.readFileSync('dist/assets/trainers/'+name+'.png');view.images['trainer-'+team]=img;}\nconst fighters=preset.teams.flatMap");s=s.replace('let outroCaptured=false;const before=',"for(const p of fighters.filter(p=>p.team===1)){p.hp=0;view.updateHP(p);if(p.el){p.el.remove();p.el=null;}}\nlet outroCaptured=false;const before=");fs.writeFileSync(p,s);

@@ -1,5 +1,5 @@
-import {applyFormArt} from './form-art.js?v=21';
-import {endBeamStruggle} from './beam-struggle.js?v=21';
+import {applyFormArt} from './form-art.js?v=32';
+import {endBeamStruggle} from './beam-struggle.js?v=32';
 export const OUTRO_STEPS=[['impact',100],['collapse',1200],['silence',800],['pose',2200],['title',700],['hold',2000]];
 export async function playRaidOutro({view,audio,fighters,winner,name,wait,valid}){
  const boss=fighters.find(p=>p.isBoss),survivors=fighters.filter(p=>p.team===winner&&p.hp>0),heroes=[...survivors].sort((a,b)=>a.slot-b.slot).slice(0,3),bossWin=winner===0&&!!boss;

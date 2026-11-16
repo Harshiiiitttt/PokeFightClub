@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+const edit=(f,fn)=>{const p='dist/'+f,s=fs.readFileSync(p,'utf8'),n=fn(s);if(s===n)throw Error(f);fs.writeFileSync(p,n)};
+edit('recording-studio.js',s=>{
+s="export const RECORDING_PROFILES={fullhd:{width:1080,height:1920,fps:60,videoBitsPerSecond:12000000},compact:{width:540,height:960,fps:30,videoBitsPerSecond:4000000}};\n"+s;
+s=s.replace('this.recording = false;','this.recording = false;this.quality=\'fullhd\';',1);
+s=s.replace('  renderCompositeFrame() {', "  setQuality(value){if(this.recording||!RECORDING_PROFILES[value])return false;this.quality=value;return true;}\n\n  renderCompositeFrame() {");
+s=s.replace('    const c = this.ctx;\n    c.clearRect',"    const c = this.ctx,scale=(this.canvas.width||W)/W;c.setTransform?.(scale,0,0,scale,0,0);c.imageSmoothingEnabled=false;\n    c.clearRect");
+s=s.replace('    this.recording = true;\n    this.chunks',"    const profile=RECORDING_PROFILES[this.quality]||RECORDING_PROFILES.fullhd;this.captureProfile={...profile};\n    if(this.canvas){this.canvas.width=profile.width;this.canvas.height=profile.height;this.ctx=this.canvas.getContext('2d');}\n    this.recording = true;\n    this.chunks");
+s=s.replace('this.canvas.captureStream(30)','this.canvas.captureStream(profile.fps)').replace("new MediaRecorder(stream, {mimeType: mime})", "new MediaRecorder(stream, {mimeType:mime,videoBitsPerSecond:profile.videoBitsPerSecond,audioBitsPerSecond:192000})").replace("this.onStatus('Recording 9:16 video + audio…')", "this.onStatus(`Recording ${profile.width}×${profile.height} · ${profile.fps} fps + audio…`)");
+return s;});
+edit('index.html',s=>s.replace('<label class="toggle-row"><span>Auto-record battles', '<label class="control-field"><span>Video quality</span><select id="record-quality" aria-label="Video recording quality"><option value="fullhd">1080 × 1920 · 60 fps</option><option value="compact">540 × 960 · 30 fps · Smaller file</option></select></label>\n<label class="toggle-row"><span>Auto-record battles'));
+edit('app.js',s=>s.replace("if(el){el.textContent=msg;el.hidden=!msg;}});", "if(el){el.textContent=msg;el.hidden=!msg;}const quality=$('#record-quality');if(quality)quality.disabled=studio.recording;const button=$('#record-video');if(button)button.textContent=studio.recording?'■ Stop & Export Video':'● Record 9:16 Video';});").replace("$('#winner-subtitle')?.addEventListener", "$('#record-quality')?.addEventListener('change',e=>{studio.setQuality(e.target.value);});\n$('#winner-subtitle')?.addEventListener"));
+edit('trainer-hud-art.js',s=>s.replace("c.save();c.translate(x,y);c.lineWidth=1.5;", "c.save();const alpha=c.globalAlpha??1;c.translate(x,y);c.lineWidth=1.5;").replace("c.globalAlpha=status==='fainted'?.48:1;", "c.globalAlpha=alpha*(status==='fainted'?.48:1);").replace("if(status==='fainted'){c.globalAlpha=1;", "if(status==='fainted'){c.globalAlpha=alpha;"));
+edit('trainer-overlay.js',s=>s.replace('c.globalAlpha=.55;c.fillRect(300','c.globalAlpha=visibility*.55;c.fillRect(300'));
+edit('duel-showcase.js',s=>s.replace(" const weatherAlpha=view.duelBeamClash?.4:view.duelDrama?.6:1;\n",''));

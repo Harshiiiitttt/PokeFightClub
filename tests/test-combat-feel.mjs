@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {parseHTML} from 'linkedom';
+import {createCanvas,Image} from '@napi-rs/canvas';
+import {BattleView} from '../dist/battle-view.js';
+import {createFighter,moves,movesFor} from '../dist/engine.js';
+import {choreograph} from '../dist/choreography.js';
+import {isContactMove,hitStrength,shakeProfile} from '../dist/combat-feel.js';
+assert(isContactMove(moves.find(m=>m.name==='body-slam')));assert(!isContactMove(moves.find(m=>m.name==='earthquake')));
+const data=JSON.parse(fs.readFileSync('dist/pokemon.json'));for(const p of Object.values(data))if(moves.some(m=>p.moves.includes(m.name)&&isContactMove(m)))assert(movesFor(p).some(isContactMove),p.name+' needs a learned contact option');
+assert(shakeProfile(.85).amplitude>shakeProfile(.27).amplitude*2);assert(shakeProfile(.85).duration>shakeProfile(.27).duration);
+const {document}=parseHTML(fs.readFileSync('dist/index.html','utf8'));globalThis.document=document;globalThis.Image=class extends Image{set src(path){super.src=fs.readFileSync('dist/'+path)}};
+const create=document.createElement.bind(document);document.createElement=tag=>{const el=create(tag);if(tag==='canvas'){const canvas=createCanvas(128,128);el.getContext=()=>canvas.getContext('2d');for(const dim of ['width','height'])Object.defineProperty(el,dim,{get:()=>canvas[dim],set:v=>canvas[dim]=v})}return el};for(const el of document.querySelectorAll('canvas')){const c=createCanvas(540,960);el.getContext=()=>c.getContext('2d')}
+const view=new BattleView(document.querySelector('#stage'),()=>{});view.pmd=JSON.parse(fs.readFileSync('dist/assets/pmd/manifest.json'));const f=[144,145,146,243,244,245].map((id,i)=>createFighter(data[id],i<3?0:1,i%3));view.mount(f);for(let i=0;i<60&&!f.every(p=>view.images['pmd-'+p.id+'-'+view.pmd[p.id].anims.Walk.name]);i++)await new Promise(r=>setImmediate(r));
+const actor=f[3],target=f[0],origin={...actor.pos},trace=[],sounds=[];const move=moves.find(m=>m.name==='crunch');
+await choreograph({actor,target,move,damage:40,mult:1,crit:false,dodge:false},{view,audio:{sfx:(...s)=>sounds.push(s),cry(){}},rng:()=>.5,valid:()=>true,log(){},wait:async ms=>{for(let i=0;i<Math.ceil(ms/1000*60);i++){view.draw(1/60);trace.push({x:actor.pos.x,y:actor.pos.y,key:actor.animKey,transform:document.querySelector('#battle-world').style.transform})}}});
+assert(Math.max(...trace.map(p=>Math.hypot(p.x-origin.x,p.y-origin.y)))>250,'Physical attacker must visibly cross the arena');assert(Math.hypot(actor.pos.x-origin.x,actor.pos.y-origin.y)<2,'Attacker must recover to its starting position');assert(trace.some(p=>p.key?.startsWith('Walk-')),'Use native walking frames during travel');assert(trace.some(p=>p.key?.startsWith('Attack-')),'Use native attack frames at contact');assert(trace.every(p=>!p.transform.includes('scale')),'Attack camera must never zoom');assert(sounds.some(s=>s[1]==='dash')&&sounds.some(s=>s[1]==='impact'));
+const strong=hitStrength({move:{power:120},damage:50,target,crit:false});const light=hitStrength({move:{power:40},damage:10,target,crit:false});assert(strong>light);
+target.hp=0;view.impact(target,'#fff',1);assert(view.effects.some(e=>e.kind==='shockwave'));assert.equal(view.timeScale,.4);for(let i=0;i<90;i++)view.draw(1/60);assert.equal(view.timeScale,1,'Knockout slowdown must end automatically');assert(!document.querySelector('#battle-world').style.transform.includes('scale'));
+console.log('PASS: learned contact move coverage, >250px physical approach, native walk/attack frames, full recovery, dash/impact cues, strength-scaled shake and zero attack zoom.');

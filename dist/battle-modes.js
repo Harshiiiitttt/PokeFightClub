@@ -1,7 +1,10 @@
-import {REGIONS, STARTER_LINES, LEGENDARY_IDS, EVOLUTION_CHAINS, CURATED_SPECIES, resolveSpeciesData} from './species-db.js?v=21';
-import {createFighter, chooseAttack, title} from './engine.js?v=21';
+import {trainerTeams} from './trainer-rosters.js?v=32';
+import {TRAINER_PRESETS} from './trainer-duel.js?v=32';
+import {REGIONS, STARTER_LINES, LEGENDARY_IDS, EVOLUTION_CHAINS, CURATED_SPECIES, resolveSpeciesData} from './species-db.js?v=32';
+import {createFighter, chooseAttack, title} from './engine.js?v=32';
 
 export const MODE_CATALOG = {
+  'trainer-duel': {label:'Trainer Duel (6v6)',badge:'6 VS 6 · TRAINER DUEL',description:'Choose regional Ash teams, rivals and champions, or edit any six-Pokémon team. Continuous close-range exchanges, circling footwork, opponent-facing sprites, cinematic tracking camera, and replacements after each faint.',matchups:TRAINER_PRESETS},
   'classic': {
     label: 'Classic (3v3)',
     badge: '3 VS 3 · CLASSIC',
@@ -399,6 +402,7 @@ export function buildMatchupTeams(config, rng = Math.random) {
     return {teams: preset.teams.map(t => [...t]), titles: [...preset.names]};
   }
 
+  if(mode==='trainer-duel'){const preset=TRAINER_PRESETS.find(p=>p.id===matchup)||TRAINER_PRESETS[0];return trainerTeams(matchup==='custom'?[config.trainerA||'red',config.trainerB||'blue']:preset.trainers);}
   if (mode === 'trainer-teams') {
     const preset = MODE_CATALOG['trainer-teams'].matchups.find(m => m.id === matchup) || MODE_CATALOG['trainer-teams'].matchups[0];
     return {teams: preset.teams.map(t => [...t]), titles: [...preset.names]};

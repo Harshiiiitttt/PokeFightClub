@@ -1,4 +1,4 @@
-import {presentGuardian} from './guardian-presentation.js?v=21';
+import {presentGuardian} from './guardian-presentation.js?v=32';
 export const GUARDIAN_LANDINGS=[{x:145,y:650},{x:395,y:650},{x:270,y:690}];
 export async function playGuardianEntrance({boss,guardians,fallen,view,audio,wait,valid,attach,awaken,log,willLabel}){
  const cinematic=view.cinematic!==false,w=ms=>wait(cinematic?ms:Math.round(ms*.35));

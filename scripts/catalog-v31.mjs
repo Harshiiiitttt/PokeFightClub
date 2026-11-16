@@ -1,0 +1,2 @@
+import fs from 'node:fs';
+let p='dist/trainer-duel.js',s=fs.readFileSync(p,'utf8');s="import {TRAINERS,REGIONAL_TRAINER_PRESETS,trainerPortrait} from './trainer-rosters.js?v=30';\n"+s;s=s.replace(/export const TRAINER_PRESETS=\[[\s\S]*?\];/,"export const TRAINER_PRESETS=REGIONAL_TRAINER_PRESETS;").replace('...TRAINER_PRESETS.flatMap(p=>p.teams.flat())','...TRAINERS.flatMap(p=>p.team)').replace("view.images['trainer-'+s.winner]","trainerPortrait(view,s.winner)");fs.writeFileSync(p,s);

@@ -1,4 +1,4 @@
-import {title} from './engine.js?v=21';
+import {title} from './engine.js?v=32';
 export function noteFaint(view,p){if(p.hp>0||p.faintNoticeShown)return;p.faintNoticeShown=true;view.faintNotices??=[];view.faintNotices.push({text:title(p.name||'Pokémon')+' fainted!',until:(view.noticeTime??view.presentationTime??0)+5});}
 export function drawFaintNotices(c,view){
  const time=view.noticeTime??view.presentationTime??0;c.clearRect(0,0,540,960);view.faintNotices=(view.faintNotices||[]).filter(n=>n.until>time);

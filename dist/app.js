@@ -1,18 +1,22 @@
-import {playRaidOutro} from './raid-outro.js?v=21';
-import {openingExpired,raidWaitDuration} from './raid-pacing.js?v=21';
-import {applyFormArt,EVOLVED_FORM_KEYS,formAssetUrl} from './form-art.js?v=21';
-import {playGuardianEntrance} from './guardian-entrance.js?v=21';
-import {arenaCatalog} from './arena-catalog.js?v=21';
-import {ensurePmd} from './pmd-loader.js?v=21';
-import {spriteCandidates} from './classic-sprites.js?v=21';
-import {choreograph,choreographRaidWave,choreographAct2Wave,choreographArmyWave,triggerBossPhase2} from './choreography.js?v=21';
-import {formationFor} from './formation.js?v=21';
-import {megaColors} from './evolution-fx.js?v=21';
-import {megaForms} from './mega.js?v=21';
-import {title,colors,movesFor,createFighter,chooseAttack} from './engine.js?v=21';
-import {BattleView} from './battle-view.js?v=21';
-import {BattleAudio} from './battle-audio.js?v=21';
-import {resolveSpeciesData,speciesMeta,EVOLUTION_CHAINS} from './species-db.js?v=21';
+import {TRAINERS,REGIONAL_TRAINER_PRESETS,setTrainerIdentity} from './trainer-rosters.js?v=32';
+import {ensureTrainerPortrait} from './trainer-portraits.js?v=32';
+import {choreographTrainerExchange} from './trainer-combat.js?v=32';
+import {playTrainerOutro,TRAINER_BUNDLED_IDS,sendTrainerPokemon} from './trainer-duel.js?v=32';
+import {playRaidOutro} from './raid-outro.js?v=32';
+import {openingExpired,raidWaitDuration} from './raid-pacing.js?v=32';
+import {applyFormArt,EVOLVED_FORM_KEYS,formAssetUrl} from './form-art.js?v=32';
+import {playGuardianEntrance} from './guardian-entrance.js?v=32';
+import {arenaCatalog} from './arena-catalog.js?v=32';
+import {ensurePmd} from './pmd-loader.js?v=32';
+import {spriteCandidates} from './classic-sprites.js?v=32';
+import {choreograph,choreographRaidWave,choreographAct2Wave,choreographArmyWave,triggerBossPhase2} from './choreography.js?v=32';
+import {formationFor} from './formation.js?v=32';
+import {megaColors} from './evolution-fx.js?v=32';
+import {megaForms} from './mega.js?v=32';
+import {title,colors,movesFor,createFighter,chooseAttack} from './engine.js?v=32';
+import {BattleView} from './battle-view.js?v=32';
+import {BattleAudio} from './battle-audio.js?v=32';
+import {resolveSpeciesData,speciesMeta,EVOLUTION_CHAINS} from './species-db.js?v=32';
 import {
   MODE_CATALOG,
   FUTURE_FORMS,
@@ -24,17 +28,17 @@ import {
   findNextTournamentMatch,
   recordTournamentMatch,
   simulateMatchInstant
-} from './battle-modes.js?v=21';
-import {RecordingStudio} from './recording-studio.js?v=21';
+} from './battle-modes.js?v=32';
+import {RecordingStudio} from './recording-studio.js?v=32';
 
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 function setVal(el,val){if(!el)return;try{el.value=val}catch{}const opts=[...(el.querySelectorAll?.('option')||[])];for(const o of opts)o.removeAttribute('selected');const hit=opts.find(o=>o.value===String(val));if(hit){hit.selected=true;hit.setAttribute('selected','')}}
 let cache={},roster=[],teams=[[144,145,146],[243,244,245]],arena='stadium',fighters=[],running=false,paused=false,done=false,speed=1,cinematic=!matchMedia('(prefers-reduced-motion: reduce)').matches,sound=true,round=0,runId=0,seed=1,startSeed=1,rng,lastTime=0,elapsed=0,selectSlot=[0,0],filter='featured',limit=60,pickerBusy=false;
-let currentMode='classic',currentMatchup='',battleRules='natural',battleFormat='simultaneous',seriesLength=1,seriesScore=[0,0],seriesGame=1,modeTitles=['',''],customTitles=['',''],totalDamageDealt=0,savedPresets=[...DEFAULT_SAVED_PRESETS],battleHistory=[],tournament=null;
+let currentMode='classic',currentMatchup='',battleRules='natural',battleFormat='simultaneous',seriesLength=1,seriesMode='1',cupRound=1,cupFinished=false,cupOpponents=[],seriesScore=[0,0],seriesGame=1,modeTitles=['',''],customTitles=['',''],totalDamageDealt=0,savedPresets=[...DEFAULT_SAVED_PRESETS],battleHistory=[],tournament=null;
 
 const featured=[144,145,146,243,244,245,6,9,3,25,94,149,150,151,249,250,254,257,260,282,373,376,382,383,384,445,448,483,484,487,643,644,646,658,716,717,791,792,800,888,889,890];
 const view=new BattleView($('#stage'),setImage),audioEngine=new BattleAudio(message=>{$('#playback-label').textContent=message;$('#audio-status').textContent=message;$('#audio-status').hidden=false;});
-const studio=new RecordingStudio(view,$('#stage'),msg=>{const el=$('#studio-status');if(el){el.textContent=msg;el.hidden=!msg;}});
+const studio=new RecordingStudio(view,$('#stage'),msg=>{const el=$('#studio-status');if(el){el.textContent=msg;el.hidden=!msg;}const quality=$('#record-quality');if(quality)quality.disabled=studio.recording;const button=$('#record-video');if(button)button.textContent=studio.recording?'■ Stop & Export Video':'● Record 9:16 Video';});
 let visualRng=Math.random;
 const names=Object.fromEntries(Object.entries(arenaCatalog).map(([id,a])=>[id,a.name]));
 
@@ -44,7 +48,7 @@ function seeded(s){return ()=>{s|=0;s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|
 function setImage(img,id,battle=false,back=false){
   img.crossOrigin='anonymous';
   const name=cache[id]?.name||roster.find(p=>p.id===id)?.name;
-  const isFeatured=featured.includes(id);
+  const isFeatured=featured.includes(id)||TRAINER_BUNDLED_IDS.has(id);
   const candidates=spriteCandidates(id,battle&&back,name,isFeatured);
   const frontFallback=battle&&back?spriteCandidates(id,false,name,isFeatured):[];
   const localFallback=`assets/classic/${battle&&back?'back':'front'}/${id}.png`;
@@ -72,7 +76,7 @@ async function data(id){
   try{
     const r=await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`,{signal:AbortSignal.timeout(4500)});
     if(r.ok){
-      const p=await r.json(),d={id:p.id,name:p.name,types:p.types.map(x=>x.type.name),stats:p.stats.map(x=>x.base_stat),moves:p.moves.map(x=>x.move.name)};
+      const p=await r.json(),d={id:p.id,name:p.name,height:p.height,types:p.types.map(x=>x.type.name),stats:p.stats.map(x=>x.base_stat),moves:p.moves.map(x=>x.move.name)};
       cache[id]=d;
       try{localStorage.setItem('bt-pokemon-'+id,JSON.stringify(d))}catch{}
       return d;
@@ -150,15 +154,16 @@ function buildFightersList(){
     return teams.flatMap((team,t)=>team.map((id,s)=>Object.assign(createFighter(cache[id],t,s),{bundled:featured.includes(id)})));
   }
   const isRaid=currentMode==='eternatus-raid';
+  const trainerDuel=currentMode==='trainer-duel';
   const useReinforcements=battleFormat==='reinforcements'&&(teams[0].length>3||teams[1].length>3);
   const challengerCount=isRaid?Math.max(teams[0].length,teams[1].length):teams[0].length;
   return teams.flatMap((team,t)=>team.map((id,s)=>{
     const isBoss=isRaid&&t===0&&team.length===1;
-    const isReserve=useReinforcements&&!isBoss&&s>=3;
-    const slot=useReinforcements&&!isBoss?s%3:s;
+    const isReserve=trainerDuel?s>=1:useReinforcements&&!isBoss&&s>=3;
+    const slot=trainerDuel?0:useReinforcements&&!isBoss?s%3:s;
     return Object.assign(
-      createFighter(cache[id],t,slot,{rules:battleRules,reserve:isReserve,bossRaid:isBoss,challengerCount,uidIndex:s}),
-      {bundled:featured.includes(id)}
+      createFighter(cache[id],t,slot,{rules:battleRules,reserve:isReserve,bossRaid:isBoss,challengerCount,uidIndex:s,trainerDuel}),
+      {bundled:featured.includes(id)||TRAINER_BUNDLED_IDS.has(id),trainerDuel,...(trainerDuel?{uid:t+'-'+s,rosterIndex:s,reserve:isReserve}:{})}
     );
   }));
 }
@@ -241,9 +246,30 @@ function renderPicker(){
   }
 }
 
+const cupStageLabel=r=>r===1?'QUARTERFINAL':r===2?'SEMIFINAL':'GRAND FINAL';
+function syncCupView(){view.cupState=seriesMode==='cup'?{active:true,round:cupRound,stageLabel:cupStageLabel(cupRound),finished:cupFinished}:null;}
+function pickCupOpponent(){
+ const leftId=view.trainerIds?.[0]||$('#trainer-a')?.value||'red';
+ const preferred=['alain','steven','lance','cynthia','leon'].filter(id=>id!==leftId&&!cupOpponents.includes(id));
+ const pool=preferred.length?preferred:TRAINERS.map(t=>t.id).filter(id=>id!==leftId&&!cupOpponents.includes(id));
+ const nextId=pool[0]||TRAINERS.find(t=>t.id!==leftId)?.id||'blue';
+ cupOpponents.push(nextId);
+ const chosen=TRAINERS.find(t=>t.id===nextId);if(!chosen)return;
+ teams[1]=[...chosen.team];modeTitles[1]=chosen.name;
+ setVal($('#trainer-b'),nextId);setTrainerIdentity(view,[leftId,nextId]);
+ renderTeams();resetPreview();
+}
 function updateSeriesBanner(){
+  syncCupView();
   const banner=$('#series-status');
   if(!banner)return;
+  if(seriesMode==='cup'){
+    banner.hidden=false;
+    banner.textContent=cupFinished
+      ?(cupRound>=3?`🏆 CHAMPION CUP MONARCH · ${view.teamName(0)}`:`CUP ELIMINATED IN ${cupStageLabel(cupRound)}`)
+      :`🏆 CHAMPION CUP · ${cupStageLabel(cupRound)} (${cupRound}/3)`;
+    return;
+  }
   if(seriesLength<=1){
     banner.hidden=true;
     return;
@@ -257,9 +283,9 @@ function updateSeriesBanner(){
 }
 
 function prepareMatchIntro(){
-  const lineups=teams.map(team=>team.slice(0,3));
+  const lineups=teams.map(team=>team.slice(0,currentMode==='trainer-duel'?6:3));
   for(const t of [0,1]){const host=document.querySelector('[data-lineup="'+t+'"]');if(host){host.dataset.count=String(lineups[t].length);host.replaceChildren(...lineups[t].map(id=>{const img=document.createElement('img');setImage(img,id,false,false);img.alt=title(cache[id]?.name||'Pokémon');return img}));}}
-  for(const id of new Set(lineups.flat())){const source=view.pmd?.[id]?.portrait||('assets/classic/front/'+id+'.png');view.load('intro-'+id,source);}
+  for(const id of new Set(lineups.flat())){ensureTrainerPortrait(view,{id,name:cache[id]?.name});}
   return{lineups,names:[view.teamName(0),view.teamName(1)],arena:names[arena],format:currentMode==='eternatus-raid'?'50 VS 1 · BOSS RAID':teams[0].length+' VS '+teams[1].length+' · AUTOMATIC BATTLE'};
 }
 function resetPreview(){
@@ -274,7 +300,7 @@ function resetPreview(){
   $('#turn').textContent=currentMode==='classic'?'3 VS 3 / REFERENCE PACE':`${modeInfo.badge} · ${battleRules.toUpperCase()}`;
   const sub=$('#ready-subtitle');
   if(sub){
-    sub.textContent=currentMode==='eternatus-raid'
+    sub.textContent=currentMode==='trainer-duel'?'6 VS 6 · CONTINUOUS TRAINER DUEL':currentMode==='eternatus-raid'
       ?`50 VS 1 BOSS RAID · ${battleFormat.toUpperCase()}`
       :teams[0].length>3
         ?`${teams[0].length} VS ${teams[1].length} · ${battleFormat.toUpperCase()}`
@@ -325,6 +351,7 @@ function lockUI(){
   if($('#form-changes'))$('#form-changes').disabled=running;
   if($('#battle-mode'))$('#battle-mode').disabled=running;
   if($('#mode-matchup'))$('#mode-matchup').disabled=running;
+  for(const id of ['#trainer-a','#trainer-b'])if($(id))$(id).disabled=running;
   if($('#battle-rules'))$('#battle-rules').disabled=running;
   if($('#battle-format'))$('#battle-format').disabled=running;
   renderTeams();
@@ -380,6 +407,7 @@ function renderHistory(){
       battleFormat=item.format||'simultaneous';
       setVal($('#battle-format'),battleFormat);
       teams=item.teams.map(t=>[...t]);
+      if(item.mode==='trainer-duel'&&item.trainers){setTrainerIdentity(view,item.trainers);item.trainers.forEach((id,t)=>setVal($('#trainer-'+(t?'b':'a')),id));}
       modeTitles=[item.teamAName,item.teamBName];
       startSeed=item.seed;
       renderTeams();
@@ -400,7 +428,7 @@ async function evolveMegaFighter(p,w,valid,fast=false,restoreHealth=false){
   const megaTitle=customTitle||('Mega '+title(p.name)+(p.id===6?' X':''));
   const isPrimalOrUltra=megaTitle.startsWith('Primal ')||megaTitle.startsWith('Ultra ');
   const color=megaColors[p.id]||'#f0932b';
-  const duration=fast?(cinematic?260:110):(cinematic?1900:700);
+  const duration=fast?(view.trainerMode&&cinematic?980:cinematic?260:110):(cinematic?1900:700);
   view.message(title(p.name)+(isPrimalOrUltra?' awakens its ancient power!':' is Mega Evolving!'),duration*.6);
   if(cinematic)view.addFx('evolution',p.pos,p.pos,color,duration,{species:p.id});
   p.charge=cinematic;p.aura=color;
@@ -438,9 +466,13 @@ async function evolveMegaFighter(p,w,valid,fast=false,restoreHealth=false){
     }
   }
   view.updateHP(p);
+  if(view.trainerMode){
+    view.drawHUD();
+    audioEngine.synth?.('mega',.85);
+  }
   applyFormArt(view,p);
   if(restoreHealth)view.damage(p,'HP RESTORED!',true);
-  if(cinematic)view.burst(p.pos,color,24);
+  if(cinematic)view.burst(p.pos,color,view.trainerMode?28:24);
   view.message(p.name+(restoreHealth?' · HP RESTORED!':'!'),duration*.4,true);
   audioEngine.cry(p.id,p.bundled);
   log(p.name+' enters the battle!'+(restoreHealth?' Health fully restored!':''));
@@ -641,9 +673,9 @@ function applyArenaFieldHazards(){
 
 view.canMidEvolve=p=>!!$('#evolve-midbattle')?.checked&&!p?.isBoss&&!!EVOLUTION_CHAINS[p?.id];
 view.tryMidBattleEvolution=(p,w,valid)=>evolveStageFighter(p,w,valid);
-view.canLowHpMega=p=>(currentMode!=='eternatus-raid'||fighters.some(x=>x.isBoss&&x.phase2))&&!!$('#mega')?.checked&&!p?.isBoss&&!p?.mega&&!!megaForms[p?.id];
+view.canLowHpMega=p=>(currentMode!=='eternatus-raid'||fighters.some(x=>x.isBoss&&x.phase2))&&(currentMode!=='trainer-duel'||!fighters.some(x=>x.team===p.team&&x.mega))&&!!$('#mega')?.checked&&!p?.isBoss&&!p?.mega&&!!megaForms[p?.id];
 view.triggerLowHpMega=async(p,w,valid)=>currentMode==='eternatus-raid'?evolveMegaSurge(w,valid):evolveMegaFighter(p,w,valid,true,false);
-view.onReinforce=async()=>{};
+view.onReinforce=async()=>{};view.onTrainerSendout=p=>{audioEngine.sfx('normal','ready');audioEngine.synth?.('pop',.65);audioEngine.cry(p.id,p.bundled);};
 view.onPhase2Start=()=>{$('#battle-status').textContent='PHASE 2 · TRUE FORM AWAKENING';};
 
 async function start(replay=false){
@@ -661,7 +693,11 @@ async function start(replay=false){
   rng=seeded(seed);
   visualRng=seeded(seed^0x5121);
   fighters=buildFightersList();
+  if(currentMode==='trainer-duel')for(const p of fighters)if(!p.reserve)p.entranceHidden=true;
   view.mount(fighters);
+  syncCupView();
+  view.waitForTrainer=ms=>wait(ms,token,true,true);
+  view.onHighlight=(label,kind)=>studio.markHighlight(label,kind);
   view.waitForFinisher=ms=>wait(view.raidPhase1Active?Math.min(ms,Math.max(0,(10-(view.raidPhase1Elapsed||0))*1000)):ms,token,true,true);
   $('#stage').classList.remove('paused');
   $('#pause').innerHTML='Ⅱ <span>Pause</span>';
@@ -685,11 +721,19 @@ async function start(replay=false){
   sides[1].textContent=view.teamName(1);
   intro.style.setProperty('--entrance','0');
   intro.hidden=true;
-  view.matchIntro={...prepareMatchIntro(),start:view.presentationTime,duration:cinematic?1.2:.28};
+  if(currentMode==='trainer-duel'&&cinematic){
+    view.introSweep={start:view.presentationTime,dur:.4};view.letterbox=.65;
+    audioEngine.synth?.('whoosh',.55);
+    if(!await wait(400,token,true,true))return;
+    view.introSweep=null;
+  }
+  const introDuration=currentMode==='trainer-duel'?(cinematic?3.4:.6):(cinematic?1.2:.28);
+  view.matchIntro={...prepareMatchIntro(),start:view.presentationTime,duration:introDuration};
   view.letterbox=.65;
   view.cameraZoom=1.05;
-  if(!await wait(cinematic?1200:280,token,true,true))return;
+  if(currentMode==='trainer-duel'&&cinematic){audioEngine.synth?.('whoosh',.85);audioEngine.synth?.('whoosh',.7,.12);audioEngine.synth?.('riser',.7,.36);if(!await wait(800,token,true,true))return;audioEngine.cue('heavy',.55);audioEngine.synth?.('impact',1);audioEngine.synth?.('zap',.8);if(!await wait(introDuration*1000-800,token,true,true))return;}else if(!await wait(introDuration*1000,token,true,true))return;
   view.matchIntro=null;intro.hidden=true;
+  if(currentMode==='trainer-duel'){await Promise.all(fighters.filter(p=>!p.reserve).map(p=>sendTrainerPokemon(view,p,ms=>wait(ms,token),()=>token===runId)));if(token!==runId)return;}
   const cdDur=cinematic?380:95;
   for(const step of ['3','2','1','GO!']){
     audioEngine.countdownCue(step);
@@ -709,7 +753,7 @@ async function start(replay=false){
     await view.advanceRaidCharge(ms=>wait(ms,token),()=>token===runId);
     if(token!==runId)return;
   }
-  if($('#mega').checked&&currentMode!=='eternatus-raid'){
+  if($('#mega').checked&&currentMode!=='eternatus-raid'&&currentMode!=='trainer-duel'){
     const chosen=[0,1].map(team=>fighters.find(p=>p.team===team&&!p.reserve&&megaForms[p.id])).filter(Boolean);
     for(const p of chosen){
       if(!await evolveMegaFighter(p,ms=>wait(ms,token),()=>token===runId,false,false))return;
@@ -738,8 +782,8 @@ async function start(replay=false){
     }
   }
   const isLargeBattle=fighters.length>8||currentMode==='army-battle'||currentMode==='eternatus-raid';
-  const maxTurns=isLargeBattle?500:180;
-  const attackCfg={rules:battleRules,bossRaid:currentMode==='eternatus-raid',arena};
+  const maxTurns=currentMode==='trainer-duel'?Infinity:isLargeBattle?500:180;
+  const attackCfg={trainer:currentMode==='trainer-duel',rules:battleRules,bossRaid:currentMode==='eternatus-raid',arena};
   const paceDivisor=fighters.filter(p=>!p.reserve).length>16?2.4:fighters.filter(p=>!p.reserve).length>6?1.5:1;
   while(token===runId&&fighters.some(p=>p.team===0&&p.hp>0)&&round<maxTurns){
     const team1HasAlive=fighters.some(p=>p.team===1&&p.hp>0);
@@ -814,7 +858,7 @@ async function start(replay=false){
     if(!attack)break;
     await animateAttack(attack,token,paceDivisor);
     applyArenaFieldHazards();
-    if(!await wait(Math.round(220/paceDivisor),token))return;
+    if(!await wait(currentMode==='trainer-duel'?35:Math.round(220/paceDivisor),token))return;
   }
   if(token!==runId)return;
   view.label=null;view.moveLabels?.clear();
@@ -823,9 +867,15 @@ async function start(replay=false){
   const name=winner===1&&raidBossObj?.act2Triggered?'SUMMONED GUARDIANS':winner===0&&raidBossObj?.act2Triggered?`${title(raidBossObj.name).toUpperCase()} (TOTAL VICTORY)`:winner!==null?view.teamName(winner):'';
   if(winner!==null&&currentMode==='eternatus-raid'){
     if(!await playRaidOutro({view,audio:audioEngine,fighters,winner,name,wait:ms=>wait(ms,token,true,true),valid:()=>token===runId}))return;
+  }else if(winner!==null&&currentMode==='trainer-duel'){
+    if(!await playTrainerOutro({view,audio:audioEngine,winner,wait:ms=>wait(ms,token,true,true),valid:()=>token===runId}))return;
   }else if(winner!==null){
     audioEngine.background(false);
     audioEngine.sfx('normal','victory');
+    audioEngine.synth?.('fanfare',.8);
+    audioEngine.synth?.('win_chime',.65,.3);
+    const mvp=(winner===0?a:b)[0];
+    if(mvp)audioEngine.cry(mvp.id,!!mvp.bundled);
     view.burst({x:270,y:380},'#ffe58a',36);
     view.burst({x:170,y:450},'#ff856d',24);
     view.burst({x:370,y:450},'#8ef5c8',24);
@@ -863,14 +913,28 @@ async function start(replay=false){
   $('#result p').textContent=winner!==null
     ?`${survivorSummary} ${survivors.length===1?'stands':'stand'} victorious!`
     :`Neither team fell after ${maxTurns} turns. Try a new matchup.`;
-  $('#result-stats').textContent=`${round} TURNS · ${Math.round(elapsed)}s · SEED ${startSeed}`;
+  const clips=studio.highlightSummary?.();
+  $('#result-stats').textContent=`${round} TURNS · ${Math.round(elapsed)}s · SEED ${startSeed}${clips?' · CLIPS: '+clips:''}`;
   $('#result').classList.remove('hidden');
   $('#battle-status').textContent='BATTLE COMPLETE';
   $('#playback-label').textContent=winner!==null?name+' takes the arena':'An evenly matched showdown';
   log(winner!==null?name+' wins!':'The battle ends in a draw.','ko');
   audioEngine.background(false);
 
-  if(seriesLength>1&&winner!==null&&!replay){
+  if(seriesMode==='cup'&&winner!==null&&!replay){
+    if(winner===0&&cupRound<3){
+      cupRound++;cupFinished=false;
+      $('#rematch').textContent=`NEXT ROUND (${cupStageLabel(cupRound)}) ↻`;
+    }else{
+      cupFinished=true;
+      if(winner===0&&cupRound>=3){
+        if(eyebrow)eyebrow.textContent='🏆 CHAMPION CUP MONARCH CROWNED';
+        $('#result h2').textContent=`${view.teamName(0)} WINS THE CUP!`;
+      }
+      $('#rematch').textContent='NEW CHAMPION CUP ↻';
+    }
+    updateSeriesBanner();
+  }else if(seriesLength>1&&winner!==null&&!replay){
     const maxWins=Math.ceil(seriesLength/2);
     if(seriesScore[0]<maxWins&&seriesScore[1]<maxWins){
       seriesScore[winner]++;
@@ -909,6 +973,7 @@ async function start(replay=false){
     rules:battleRules,
     format:battleFormat,
     teams:teams.map(t=>[...t]),
+    ...(currentMode==='trainer-duel'&&view.trainerIds?{trainers:[...view.trainerIds]}:{}),
     arena
   });
 
@@ -918,7 +983,7 @@ async function start(replay=false){
 }
 
 async function animateAttack(a,token,paceDivisor=1){
-  return choreograph(a,{
+  return (currentMode==='trainer-duel'?choreographTrainerExchange:choreograph)({...a,trainerDuel:currentMode==='trainer-duel'},{
     view,
     audio:audioEngine,
     wait:ms=>wait(ms/paceDivisor,token),
@@ -944,8 +1009,13 @@ function frame(now){
 }
 
 // Mode & Matchup UI management
+let trainerPreviousTeams=null;
 function configureModeUI(mode,keepTeams=false){
+  if(mode==='trainer-duel'&&currentMode!=='trainer-duel')trainerPreviousTeams=teams.map(t=>t.slice(0,3));
+  if(currentMode==='trainer-duel'&&mode==='classic'&&!keepTeams)teams=trainerPreviousTeams||[[144,145,146],[243,244,245]];
   currentMode=mode;
+  if($('#trainer-controls'))$('#trainer-controls').hidden=mode!=='trainer-duel';
+  if(mode==='trainer-duel')for(const id of ['#trainer-a','#trainer-b']){const select=$(id);if(!select.children.length){for(const region of new Set(TRAINERS.map(t=>t.region))){const group=document.createElement('optgroup');group.label=region;for(const t of TRAINERS.filter(t=>t.region===region)){const option=document.createElement('option');option.value=t.id;option.textContent=t.name+' · '+t.region;group.append(option);}select.append(group);}}}
   const info=MODE_CATALOG[mode]||MODE_CATALOG.classic;
   if($('#mode-description'))$('#mode-description').textContent=info.description;
   const controls=$('#mode-controls');
@@ -980,6 +1050,7 @@ function configureModeUI(mode,keepTeams=false){
   $('#starter-controls').hidden=mode!=='starter-showdown';
   $('#type-controls').hidden=mode!=='type-wars';
   $('#tournament-controls').hidden=mode!=='tournament';
+  if(mode==='trainer-duel'){arena='champion';view.arena=arena;battleRules='natural';setVal($('#battle-rules'),'natural');$('#arena-name').textContent=names[arena];$('#ready-arena').textContent=names[arena];$('#weather').textContent=arenaCatalog[arena].weather;$$('.arena-option').forEach(b=>b.classList.toggle('selected',b.dataset.arena===arena));}
   if(mode==='eternatus-raid'){
     battleFormat='simultaneous';
     setVal($('#battle-format'),'simultaneous');
@@ -1010,6 +1081,7 @@ function applyModeSelection(keepTeams=false){
   const built=buildMatchupTeams({
     mode:currentMode,
     matchup:currentMatchup,
+    trainerA:$('#trainer-a')?.value||'red',trainerB:$('#trainer-b')?.value||'blue',
     regionA:$('#region-a')?.value||'kanto',
     regionB:$('#region-b')?.value||'johto',
     regionPool:$('#region-pool')?.value||'starters',
@@ -1018,10 +1090,11 @@ function applyModeSelection(keepTeams=false){
     typeB:$('#type-b')?.value||'water',
     squadSize:+($('#type-size')?.value||3)
   });
+  if(built.trainers){setTrainerIdentity(view,built.trainers);built.trainers.forEach((id,t)=>setVal($('#trainer-'+(t?'b':'a')),id));}
   if(!keepTeams)teams=built.teams;
   modeTitles=built.titles||['',''];
   const multiSquad=teams[0].length>3||teams[1].length>3;
-  if($('#format-controls'))$('#format-controls').hidden=!multiSquad||currentMode==='army-battle';
+  if($('#format-controls'))$('#format-controls').hidden=!multiSquad||currentMode==='army-battle'||currentMode==='trainer-duel';
   if(currentMode==='army-battle')battleFormat='simultaneous';
   seriesScore=[0,0];
   seriesGame=1;
@@ -1112,10 +1185,11 @@ function loadPresetByIndex(idx){
   setVal($('#battle-format'),battleFormat);
   if(p.starterStage&&$('#starter-stage'))setVal($('#starter-stage'),p.starterStage);
   configureModeUI(currentMode,true);
-  if(p.matchup&&$('#mode-matchup'))setVal($('#mode-matchup'),p.matchup);
+  currentMatchup=p.matchup||currentMatchup;if(p.matchup&&$('#mode-matchup'))setVal($('#mode-matchup'),p.matchup);
+  if(currentMode==='trainer-duel'){const ids=p.trainers||REGIONAL_TRAINER_PRESETS.find(t=>t.id===p.matchup)?.trainers||['red','blue'];setTrainerIdentity(view,ids);ids.forEach((id,t)=>setVal($('#trainer-'+(t?'b':'a')),id));}
   teams=p.teams.map(t=>[...t]);
   modeTitles=p.titles?[...p.titles]:['',''];
-  if($('#format-controls'))$('#format-controls').hidden=!(teams[0].length>3||teams[1].length>3)||currentMode==='army-battle';
+  if($('#format-controls'))$('#format-controls').hidden=!(teams[0].length>3||teams[1].length>3)||currentMode==='army-battle'||currentMode==='trainer-duel';
   renderTeams();
   resetPreview();
 }
@@ -1124,7 +1198,14 @@ function loadPresetByIndex(idx){
 $('#start').onclick=()=>start();
 $('#stage-start').onclick=()=>start();
 $('#rematch').onclick=()=>{
-  if(seriesLength>1){
+  if(seriesMode==='cup'){
+    if(cupFinished){
+      cupRound=1;cupFinished=false;cupOpponents=[view.trainerIds?.[1]].filter(Boolean);
+    }else if(currentMode==='trainer-duel'){
+      pickCupOpponent();
+    }
+    updateSeriesBanner();
+  }else if(seriesLength>1){
     const maxWins=Math.ceil(seriesLength/2);
     if(seriesScore[0]>=maxWins||seriesScore[1]>=maxWins){
       seriesScore=[0,0];
@@ -1173,6 +1254,7 @@ $('#sound').onclick=async()=>{
   }
 };
 $('#music-volume').oninput=e=>{audioEngine.setMix('music',+e.target.value/100);$('#music-value').textContent=Math.round(+e.target.value)+'%'};
+if($('#music-volume')){audioEngine.setMix('music',(+$('#music-volume').value||22)/100);if($('#music-value'))$('#music-value').textContent=Math.round(+$('#music-volume').value||22)+'%';}
 $('#effects-volume').oninput=e=>{audioEngine.setMix('effects',+e.target.value/100);$('#effects-value').textContent=e.target.value+'%'};
 $('#test-sfx').onclick=()=>{sound=true;audioEngine.enable();audioEngine.sfx('fighting','impact',1);$('#sound span').textContent='ON';$('#audio-status').hidden=true;};
 $('#music').onchange=e=>{audioEngine.musicEnabled=e.target.checked;audioEngine.background(running&&!paused)};
@@ -1258,6 +1340,7 @@ $('#mode-matchup')?.addEventListener('change',e=>{
   }
   applyModeSelection(false);
 });
+for(const [t,id] of ['#trainer-a','#trainer-b'].entries())$(id)?.addEventListener('change',()=>{if(running)return;currentMatchup='custom';setVal($('#mode-matchup'),'custom');const ids=[$('#trainer-a').value,$('#trainer-b').value],chosen=TRAINERS.find(p=>p.id===ids[t]);teams[t]=[...chosen.team];modeTitles[t]=chosen.name;setTrainerIdentity(view,ids);seriesScore=[0,0];seriesGame=1;renderTeams();resetPreview();});
 for(const id of ['#region-a','#region-b','#region-pool']){
   $(id)?.addEventListener('change',()=>{
     if(running)return;
@@ -1285,7 +1368,11 @@ $('#battle-rules')?.addEventListener('change',e=>{
   resetPreview();
 });
 $('#series-mode')?.addEventListener('change',e=>{
-  seriesLength=+e.target.value||1;
+  const val=String(e.target.value);
+  seriesMode=val==='cup'?'cup':'1';
+  seriesLength=val==='cup'?1:(+val||1);
+  if(val==='3')seriesMode='3';
+  cupRound=1;cupFinished=false;cupOpponents=[view.trainerIds?.[1]].filter(Boolean);
   seriesScore=[0,0];
   seriesGame=1;
   updateSeriesBanner();
@@ -1352,6 +1439,7 @@ $('#save-preset')?.addEventListener('click',()=>{
     format:battleFormat,
     rules:battleRules,
     teams:teams.map(t=>[...t]),
+    ...(currentMode==='trainer-duel'?{trainers:[...view.trainerIds]}:{}),
     titles:[view.teamName(0),view.teamName(1)]
   };
   savedPresets.unshift(entry);
@@ -1370,14 +1458,14 @@ $('#delete-preset')?.addEventListener('click',()=>{
 // Studio & History listeners
 $('#team-a-title')?.addEventListener('input',e=>{customTitles[0]=e.target.value;syncCustomTitles();if(!running)resetPreview()});
 $('#team-b-title')?.addEventListener('input',e=>{customTitles[1]=e.target.value;syncCustomTitles();if(!running)resetPreview()});
+$('#record-quality')?.addEventListener('change',e=>{studio.setQuality(e.target.value);});
 $('#winner-subtitle')?.addEventListener('input',e=>{studio.winnerSubtitle=e.target.value});
 $('#record-video')?.addEventListener('click',()=>{
   if(studio.recording){
     studio.stopRecording();
     $('#record-video').textContent='● Record 9:16 Video';
   }else{
-    studio.startRecording(audioEngine);
-    $('#record-video').textContent='■ Stop & Export Video';
+    if(studio.startRecording(audioEngine))$('#record-video').textContent='■ Stop & Export Video';
   }
 });
 $('#clear-history')?.addEventListener('click',()=>{

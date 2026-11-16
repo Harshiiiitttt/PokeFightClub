@@ -4,6 +4,7 @@ export const RAID_BOSS_POS={x:270,y:480};
 
 export function formationFor(fighters,team,raidEngaged=false){
  const alive=fighters.filter(p=>p.team===team&&p.hp>0&&!p.reserve).sort((a,b)=>a.slot-b.slot);
+ if(fighters.some(p=>p.trainerDuel))return alive.map(fighter=>({fighter,position:{x:team===0?210:330,y:team===0?410:610}}));
  const hasBoss=fighters.some(p=>p.isBoss);
  const engaged=raidEngaged||fighters.some(p=>p.raidEngaged);
  if(hasBoss){

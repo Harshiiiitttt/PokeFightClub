@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createCanvas} from '@napi-rs/canvas';
+import {view,studio} from './test-trainer-native.mjs';
+import {createFighter,moves} from '../dist/engine.js';
+import {TRAINER_PRESETS,sendTrainerPokemon} from '../dist/trainer-duel.js';
+import {TRAINER_STANCES,ARENA_RAILS} from '../dist/arena-layout.js';
+import {drawChannelBoards} from '../dist/channel-boards.js';
+import {duelBody,duelContactPoint,duelClearanceMargin} from '../dist/duel-clearance.js';
+import {choreographTrainerExchange} from '../dist/trainer-combat.js';
+const cache=JSON.parse(fs.readFileSync('dist/pokemon.json')),ids=TRAINER_PRESETS[0].teams.map(t=>[...t]);ids[0][0]=6;
+view.mount(ids.flatMap((list,t)=>list.map((id,i)=>Object.assign(createFighter(cache[id],t,0,{reserve:i>0,uidIndex:i}),{uid:t+'-'+i,trainerDuel:true,reserve:i>0}))));view.customTeamNames=['RED','BLUE'];view.stage.querySelector('#intro-overlay').classList.add('hidden');view.stage.querySelector('#result').classList.add('hidden');view.draw(.016);
+const shots=[],save=name=>{studio.renderCompositeFrame();const img=createCanvas(540,960);img.getContext('2d').drawImage(studio.canvas.native,0,0);shots.push(img);fs.writeFileSync('D:/pokemon-reference/'+name+'-v27.png',img.toBuffer('image/png'));};save('arena-channel-boards');
+for(const box of TRAINER_STANCES){assert(box.w<110&&box.h<50);assert(box.feet.x-8*1.15>=box.x&&box.feet.x+8*1.15<=box.x+box.w);assert(box.feet.y-32*1.15>=box.y&&box.feet.y<=box.y+box.h,'Trainer sprite must fit inside its box');assert(box.x>ARENA_RAILS.gateLeft&&box.x+box.w<ARENA_RAILS.gateRight,'Gates must remain clear of trainer boxes');}
+assert(ARENA_RAILS.left<37&&ARENA_RAILS.right>503&&ARENA_RAILS.top<258&&ARENA_RAILS.bottom>817);
+const canvas=createCanvas(540,960),ctx=canvas.getContext('2d');view.cinematic=true;view.clock=0;drawChannelBoards(ctx,view);const first=canvas.toBuffer('image/png');ctx.clearRect(0,0,540,960);view.clock=1;drawChannelBoards(ctx,view);assert(!first.equals(canvas.toBuffer('image/png')),'Advertisements must animate');ctx.clearRect(0,0,540,960);view.cinematic=false;drawChannelBoards(ctx,view);const still=canvas.toBuffer('image/png');ctx.clearRect(0,0,540,960);view.clock=7;drawChannelBoards(ctx,view);assert(still.equals(canvas.toBuffer('image/png')),'Reduced motion must keep the channel boards still');view.cinematic=true;view.clock=0;
+const words=[],proxy=new Proxy({measureText:s=>({width:s.length*6})},{get:(o,k)=>k==='fillText'?s=>words.push(s):k in o?o[k]:()=>{},set:(o,k,v)=>{o[k]=v;return true}});drawChannelBoards(proxy,view);assert(words.some(t=>t.includes('PokeFightClub'))&&words.some(t=>t.includes('SUBSCRIBE')));
+const a=view.fighters[0],b=view.fighters[6],start={...a.pos},point=duelContactPoint(a,b);a.pos=point;const aa=duelBody(a),bb=duelBody(b),gap=Math.max(Math.abs(aa.x-bb.x)-(aa.w+bb.w)/2,Math.abs(aa.y-bb.y)-(aa.h+bb.h)/2);assert(gap>=2.99&&gap<3.1,'Contact approach must stop at the real body edge');a.pos=start;
+let closest=Infinity,captured=false;const audio={sfx(){},cry(){},duck(){}};
+const wait=async ms=>{for(let i=0;i<Math.ceil(ms/1000*60);i++){view.draw(1/60);const p=duelBody(a),q=duelBody(b),g=Math.max(Math.abs(p.x-q.x)-(p.w+q.w)/2,Math.abs(p.y-q.y)-(p.h+q.h)/2);assert(g>=duelClearanceMargin(view)-.1,'Visible bodies must not overlap');if(view.duelContact)closest=Math.min(closest,g);if(!captured&&view.duelContact&&view.effects.some(e=>e.kind==='slash')){save('close-physical-strike');captured=true;}}};
+for(const [name,actor,target] of [['scratch',a,b],['tackle',b,a]])await choreographTrainerExchange({actor,target,move:moves.find(m=>m.name===name),damage:15,mult:1,crit:false,dodge:false},{view,audio,wait,valid:()=>true,rng:()=>.6,log(){}});
+assert(captured&&closest>=2.9&&closest<4,'Physical exchanges must reach close body contact');assert.equal(view.duelContact,null);
+const throws=[],original=view.addFx.bind(view);view.addFx=(kind,from,...rest)=>{if(kind==='trainer-sendout')throws.push({...from});return original(kind,from,...rest);};for(const p of [a,b])await sendTrainerPokemon(view,p,async ms=>view.draw(ms/1000),()=>true);assert.deepEqual(throws,TRAINER_STANCES.map(s=>s.hand));
+const montage=createCanvas(1080,960);shots.forEach((img,i)=>montage.getContext('2d').drawImage(img,i*540,0));fs.writeFileSync('D:/pokemon-reference/contact-and-branding-v27.png',montage.toBuffer('image/png'));
+console.log(`PASS: scratch/tackle reach ${closest.toFixed(1)}px body clearance without overlap, trainers fit smaller boxes, throws originate from the new stances, barriers sit outside the field, and PokeFightClub/Subscribe boards animate with reduced-motion support.`);

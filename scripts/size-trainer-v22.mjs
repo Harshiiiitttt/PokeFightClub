@@ -1,0 +1,7 @@
+import fs from 'node:fs';
+const edit=(name,fn)=>{const p='dist/'+name;fs.writeFileSync(p,fn(fs.readFileSync(p,'utf8')));};
+edit('recording-studio.js',s=>"import {trainerSpriteRect} from './trainer-duel.js?v=21';\n"+s.replace('p.pos.y + 18, p.isBoss ? 36 : 22, p.isBoss ? 11 : 7','p.pos.y + (p.trainerDuel?35:18), p.isBoss ? 36 : p.trainerDuel?32:22, p.isBoss ? 11 : p.trainerDuel?9:7').replace('if(p.isGuardian||p.isBoss||p.outroHero){','if(p.trainerDuel){const r=trainerSpriteRect(p);c.drawImage(spriteCanvas,r.x,r.y,r.width,r.height);}else if(p.isGuardian||p.isBoss||p.outroHero){'));
+edit('battle-view.js',s=>s.replace('const dx=target.pos.x-p.pos.x,dy=target.pos.y-p.pos.y,n=Math.max(1,Math.hypot(dx,dy));return{x:p.pos.x+dx/n*Math.min(12,+body.bodyWidth*.15),y:p.pos.y+(+body.bodyTop)+(+body.bodyHeight)*.32}', 'const dx=target.pos.x-p.pos.x,dy=target.pos.y-p.pos.y,n=Math.max(1,Math.hypot(dx,dy)),scale=p.trainerDuel?1.25:1;return{x:p.pos.x+dx/n*Math.min(12,+body.bodyWidth*.15)*scale,y:p.pos.y+((+body.bodyTop)+(+body.bodyHeight)*.32)*scale}'));
+edit('choreography.js',s=>s.replace('const reach=a.trainerDuel?108:', 'const reach=a.trainerDuel?Math.max(118,(spriteExtent(actor.id)+spriteExtent(target.id))*.625+8):'));
+edit('move-labels.js',s=>s.replace("const bodyTop=Number(p.el?.querySelector('canvas')?.dataset?.bodyTop)||-55,width=", "const bodyTop=(Number(p.el?.querySelector('canvas')?.dataset?.bodyTop)||-55)*(p.trainerDuel?1.25:1),width="));
+fs.appendFileSync('dist/workspace.css','\n.trainer-duel-mode .overhead-fighter{width:30%;height:16.875%}\n');
